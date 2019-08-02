@@ -1,83 +1,89 @@
 #header {
   .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
     background-color: $color-blue;
+    height: 60px;
     padding: 0;
-    svg {
-      fill: $color-white-0;
-      background-color: transparent;
+    text-align: center;
+    li {
+      span,
+      i {
+        display: inline-block;
+        letter-spacing: 0.05em;
+      }
+      span{
+        margin-right: 10px;
+      }
+      line-height: 60px;
+      display: block;
+      border-right: 1px solid $color-white-0;
+      height: 60px;
+      position: relative;
     }
-    ul {
+    .navbar-left {
+      width: 80%;
       display: flex;
       list-style: none;
-      align-items: center;
-      align-self: center;
-      justify-content: space-between;
-      margin-bottom: 0;
-      &.first-list {
-        li {
-          padding: 0 1em;
-          height: 4em;
-          border-right: 1px solid $color-white-0;
-          &.vehicles-list:hover {
-            background-color: $color-gray-8;
-          }
-          a {
-            margin: 0;
-            span.v-text {
-              position: absolute;
-              color: $color-white-0;
-              font-size: $fs-1;
-              bottom: -8px;
-              padding-bottom: 5px;
-            }
-            display: block;
-            position: relative;
-            &.navbar-brand {
-              margin-top: 10px;
-              width: 2.5em;
-            }
-            &.navbar-vehicles {
-              width: 3em;
-              top: 2px;
-            }
-          }
+      margin: 0;
+
+      li {
+        span,
+        i {
+          text-transform: uppercase;
+          @include text($color-white-0, $fs-0, $fw-bold-0);
+        }
+        i.fa-angle-up{
+          display: none;
         }
       }
-
-      &.secondary-list {
-        margin-right: 80px;
-        li {
-          padding: 0 1em;
-          height: 4em;
-          border-right: 1px solid $color-white-0;
+      .logo_brand {
+        width: 10%;
+        .navbar-brand {
+          margin: 0;
           padding: 0;
-          a {
-            position: relative;
-            display: block;
-            span.d-text {
-              position: absolute;
-              color: $color-white-0;
-              font-size: $fs-1;
-              top: 22px;
-              left: -14px;
-            }
-            &.navbar-dealers {
-              width: 0.8em;
-              height: 1em;
-              top: 12px;
-              right: 50px;
-              margin-right: -30px;
-            }
-          }
+          width: 50px;
+          height: 60px;
         }
+        svg {
+          fill: $color-white-0;
+        }
+      }
+      .vehicles-list {
+        width: 20%;
+        color: $color-white-0;
+      }
+      .shopping-tools-list {
+        width: 30%;
       }
     }
-    .navbar-toggler {
-      border: none;
-      i {
-        outline: none;
-        color: $color-white-0;
+    .navbar-right {
+      display: flex;
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 40%;
+      li {
+        span,
+        i {
+          text-align: center;
+          @include text($color-white-0, $fs-1 + 1 , $fw-bold-0);
+        }
+        width: 20%;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(5) {
+          border-right: none;
+        }
+        &:nth-child(5) {
+           i{
+            padding-right: 50%;
+            @include text($color-white-0, $fs-2 , $fw-normal);
+           }
+        }
       }
     }
   }
 }
+  
