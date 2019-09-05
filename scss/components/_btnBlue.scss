@@ -1,0 +1,19 @@
+.btn-blue {
+  @include button(
+      $color-white-0, 
+      $fs-1 - 1, 
+      $fw-bold,
+      $color-blue-2,
+      $pd-1 - 10,
+      $pd-2 - 10,
+      $color-blue-2,
+      $color-blue-2,
+      $color-white-0,
+      $color-blue-2  
+      );
+    line-height: 3.3rem;
+    width: 20rem;
+    height: 3.3rem;
+    border-radius: 1.95rem;
+    text-transform: uppercase;
+}

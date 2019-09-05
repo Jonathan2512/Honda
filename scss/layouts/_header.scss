@@ -1,89 +1,232 @@
 #header {
   .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: $color-blue;
-    height: 60px;
+    height: 6rem;
+    background-color: $color-blue-2;
+    margin: 0;
     padding: 0;
-    text-align: center;
-    li {
-      span,
-      i {
+    left: 0;
+    right: 0;
+    top: 0;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
         display: inline-block;
-        letter-spacing: 0.05em;
-      }
-      span{
-        margin-right: 10px;
-      }
-      line-height: 60px;
-      display: block;
-      border-right: 1px solid $color-white-0;
-      height: 60px;
-      position: relative;
-    }
-    .navbar-left {
-      width: 80%;
-      display: flex;
-      list-style: none;
-      margin: 0;
-
-      li {
-        span,
-        i {
-          text-transform: uppercase;
-          @include text($color-white-0, $fs-0, $fw-bold-0);
-        }
-        i.fa-angle-up{
-          display: none;
-        }
-      }
-      .logo_brand {
-        width: 10%;
-        .navbar-brand {
-          margin: 0;
-          padding: 0;
-          width: 50px;
-          height: 60px;
-        }
-        svg {
-          fill: $color-white-0;
-        }
-      }
-      .vehicles-list {
-        width: 20%;
-        color: $color-white-0;
-      }
-      .shopping-tools-list {
-        width: 30%;
-      }
-    }
-    .navbar-right {
-      display: flex;
-      list-style: none;
-      margin-bottom: 0;
-      padding-left: 40%;
-      li {
-        span,
-        i {
-          text-align: center;
-          @include text($color-white-0, $fs-1 + 1 , $fw-bold-0);
-        }
-        width: 20%;
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(5) {
+        position: relative;
+        border-right: 1px solid $color-blue-3;
+        padding: 0 1.5rem;
+        &:nth-child(6) {
           border-right: none;
         }
-        &:nth-child(5) {
-           i{
-            padding-right: 50%;
-            @include text($color-white-0, $fs-2 , $fw-normal);
-           }
+        a {
+          @include text($color-white-0, $fs-2 - 4, $fw-bold-1 - 200);
+          text-decoration: none;
+          i.fa-angle-up {
+            display: none;
+          }
+        }
+      }
+      &.navbar-left {
+        line-height: 6rem;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        li {
+          &:hover {
+            background-color: #06456a;
+          }
+          &.logo-brand {
+            background-color: $color-blue-2;
+            height: 60px;
+          }
+        }
+        .logo-brand {
+          padding-right: 1.5rem;
+          .heading {
+            .logo {
+              display: block;
+              height: 6rem;
+              width: 5rem;
+              position: relative;
+              svg {
+                fill: $color-white-0;
+              }
+            }
+          }
+        }
+        .vehicles-nav {
+          height: 60px;
+          .region {
+            position: absolute;
+            top: 6rem;
+            left: -8.7rem;
+            height: auto;
+            width: 1880px;
+            .region-section {
+              margin: 0 8rem;
+              .vehicles-menu {
+                width: 100%;
+                background-color: #fff;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0;
+                left: 0;
+                z-index: 102;
+                .vehicles-menu-overlay {
+                  text-align: center;
+                  padding: 1rem 0;
+                  .vehicles-items {
+                    line-height: 4rem;
+                    justify-content: center;
+                    li:hover {
+                      background-color: #fff;
+                    }
+                    a {
+                      @include text($color-blue-1, $fs-2 - 4, $fw-bold-1);
+                    }
+                  }
+                }
+              }
+              .vehicles-section {
+                left: 0;
+                margin: 0 auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                overflow: scroll;
+                .vehicles-section-overlay {
+                  text-align: center;
+                  padding-top: 6rem;
+                  margin: 0 8rem;
+                  .vehicles-content {
+                    background-color: rgb(246, 246, 246);
+                    height: calc(80vh);
+                    overflow: scroll;
+                    h4 {
+                      position: relative;
+                      z-index: 1;
+                      color: rgb(0, 68, 107);
+                      font-size: 2.8rem;
+                      line-height: 3.2rem;
+                      padding: 3rem 0;
+                      margin: 0 5.7rem;
+                      font-weight: $fw-bold-1;
+                      div {
+                        display: inline-block;
+                        padding: 0 1.5rem;
+                        margin-bottom: 5px;
+                        background-color: rgb(246, 246, 246);
+                        span {
+                          font-weight: normal;
+                          &::before {
+                            content: "\2022";
+                            font-size: 1.2em;
+                            margin-right: 8px;
+                          }
+                        }
+                      }
+                      &::before {
+                        border-top: 2px solid #e8e8e8;
+                        bottom: 0;
+                        content: "";
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        width: 100%;
+                        z-index: -1;
+                      }
+                    }
+                    .vehicles-item {
+                      width: 95%;
+                      margin-bottom: 1.5rem;
+                      .card-title {
+                        @include text($color-blue-1, $fs-2, $fw-bold-1);
+                        margin-bottom: 5px;
+                      }
+                      .card-body {
+                        padding: 0;
+                        .vehicles-info {
+                          @include text($color-blue-1, $fs-3, $fw-bold-0);
+                          width: 80%;
+                          margin: 0 auto;
+                          line-height: 20px;
+                          p {
+                            font-size: 1.6rem;
+                            font-weight: normal;
+                            margin: 5px auto;
+                          }
+                          div:first-child {
+                            float: left;
+                            text-align: left;
+                          }
+                          div:last-child {
+                            float: right;
+                            text-align: right;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .shopping-nav {
+          height: 60px;
+          .region {
+            position: absolute;
+            top: 6rem;
+            left: -10.7rem;
+            height: 60px;
+            width: 1680px;
+            .shopping-content {
+              background-color: rgb(246, 246, 246);
+              height: calc(65vh);
+              padding: 20px 20px;
+              .shopping-left {
+                padding: 0;
+                .tranformIcon {
+                  display: flex;
+                  justify-content: center;
+                  .item {
+                    text-align: center;
+                    height: 200px;
+                    padding: 20px 10.5px;
+                    margin: 1px;
+                    width: 45%;
+                    margin: 5px;
+                    background-color: #fff;
+                    box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
+                    line-height: 100px;
+                    i{
+                      @include text($color-blue-1, $fs-3 + 10, $fw-bold-1);
+                      &:hover{
+                        transform: scale(2)
+                      }
+                    }
+                    h4 {
+                      @include text($color-blue-1, $fs-2 - 2, $fw-bold-1);
+                    }
+                  }
+                }
+              }
+              .shopping-right{
+                margin-top: 20px;
+                padding-right: 20px;
+                text-align: left;
+                h4{
+                  @include text($color-blue-1, $fs-2 - 2, $fw-bold-1);
+                }
+                p{
+                  height: 36px;
+                  @include text($color-blue-2, $fs-0 ,$fw-bold-1)
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
-  

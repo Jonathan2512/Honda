@@ -6,6 +6,7 @@
 @mixin button(
   $color,
   $fs,
+  $fw,
   $bg-color,
   $pd-top-bottom,
   $pd-right-left,
@@ -16,6 +17,7 @@
 ) {
   color: $color;
   font-size: $fs;
+  font-weight: $fw;
   background-color: $bg-color;
   padding: $pd-top-bottom $pd-right-left;
   border: 1px solid $border-color;

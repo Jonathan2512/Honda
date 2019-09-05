@@ -3,73 +3,238 @@
   padding: 0;
   box-sizing: border-box; }
 
-#header .navbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; }
+
+.btn-blue {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
   background-color: #007cc0;
-  height: 60px;
+  padding: 0px 10px;
+  border: 1px solid #007cc0;
+  line-height: 3.3rem;
+  width: 20rem;
+  height: 3.3rem;
+  border-radius: 1.95rem;
+  text-transform: uppercase; }
+  .btn-blue:hover {
+    color: #007cc0;
+    background-color: #fff;
+    border: 1px solid #007cc0; }
+
+.btn-white {
+  color: #007cc0;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0px 10px;
+  border: 1px solid #007cc0;
+  line-height: 3.3rem;
+  width: 20rem;
+  height: 3.3rem;
+  border-radius: 1.95rem;
+  text-transform: uppercase; }
+  .btn-white:hover {
+    color: #fff;
+    background-color: #007cc0;
+    border: 1px solid #fff; }
+
+#header .navbar {
+  height: 6rem;
+  background-color: #007cc0;
+  margin: 0;
   padding: 0;
-  text-align: center; }
-  #header .navbar li {
-    line-height: 60px;
-    display: block;
-    border-right: 1px solid #fff;
-    height: 60px;
-    position: relative; }
-    #header .navbar li span,
-    #header .navbar li i {
+  left: 0;
+  right: 0;
+  top: 0; }
+  #header .navbar ul {
+    display: flex;
+    list-style: none; }
+    #header .navbar ul li {
       display: inline-block;
-      letter-spacing: 0.05em; }
-    #header .navbar li span {
-      margin-right: 10px; }
-  #header .navbar .navbar-left {
-    width: 80%;
-    display: flex;
-    list-style: none;
-    margin: 0; }
-    #header .navbar .navbar-left li span,
-    #header .navbar .navbar-left li i {
-      text-transform: uppercase;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 600; }
-    #header .navbar .navbar-left li i.fa-angle-up {
-      display: none; }
-    #header .navbar .navbar-left .logo_brand {
-      width: 10%; }
-      #header .navbar .navbar-left .logo_brand .navbar-brand {
-        margin: 0;
-        padding: 0;
-        width: 50px;
-        height: 60px; }
-      #header .navbar .navbar-left .logo_brand svg {
-        fill: #fff; }
-    #header .navbar .navbar-left .vehicles-list {
-      width: 20%;
-      color: #fff; }
-    #header .navbar .navbar-left .shopping-tools-list {
-      width: 30%; }
-  #header .navbar .navbar-right {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 40%; }
-    #header .navbar .navbar-right li {
-      width: 20%; }
-      #header .navbar .navbar-right li span,
-      #header .navbar .navbar-right li i {
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 600; }
-      #header .navbar .navbar-right li:nth-child(1), #header .navbar .navbar-right li:nth-child(2), #header .navbar .navbar-right li:nth-child(5) {
+      position: relative;
+      border-right: 1px solid #a3c5e2;
+      padding: 0 1.5rem; }
+      #header .navbar ul li:nth-child(6) {
         border-right: none; }
-      #header .navbar .navbar-right li:nth-child(5) i {
-        padding-right: 50%;
+      #header .navbar ul li a {
         color: #fff;
-        font-size: 20px;
-        font-weight: normal; }
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none; }
+        #header .navbar ul li a i.fa-angle-up {
+          display: none; }
+    #header .navbar ul.navbar-left {
+      line-height: 6rem;
+      margin-bottom: 0;
+      letter-spacing: 2px; }
+      #header .navbar ul.navbar-left li:hover {
+        background-color: #06456a; }
+      #header .navbar ul.navbar-left li.logo-brand {
+        background-color: #007cc0;
+        height: 60px; }
+      #header .navbar ul.navbar-left .logo-brand {
+        padding-right: 1.5rem; }
+        #header .navbar ul.navbar-left .logo-brand .heading .logo {
+          display: block;
+          height: 6rem;
+          width: 5rem;
+          position: relative; }
+          #header .navbar ul.navbar-left .logo-brand .heading .logo svg {
+            fill: #fff; }
+      #header .navbar ul.navbar-left .vehicles-nav {
+        height: 60px; }
+        #header .navbar ul.navbar-left .vehicles-nav .region {
+          position: absolute;
+          top: 6rem;
+          left: -8.7rem;
+          height: auto;
+          width: 1880px; }
+          #header .navbar ul.navbar-left .vehicles-nav .region .region-section {
+            margin: 0 8rem; }
+            #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-menu {
+              width: 100%;
+              background-color: #fff;
+              text-transform: uppercase;
+              position: absolute;
+              right: 0;
+              left: 0;
+              z-index: 102; }
+              #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-menu .vehicles-menu-overlay {
+                text-align: center;
+                padding: 1rem 0; }
+                #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-menu .vehicles-menu-overlay .vehicles-items {
+                  line-height: 4rem;
+                  justify-content: center; }
+                  #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-menu .vehicles-menu-overlay .vehicles-items li:hover {
+                    background-color: #fff; }
+                  #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-menu .vehicles-menu-overlay .vehicles-items a {
+                    color: #00446b;
+                    font-size: 16px;
+                    font-weight: 700; }
+            #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section {
+              left: 0;
+              margin: 0 auto;
+              position: absolute;
+              right: 0;
+              top: 0;
+              overflow: scroll; }
+              #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay {
+                text-align: center;
+                padding-top: 6rem;
+                margin: 0 8rem; }
+                #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content {
+                  background-color: #f6f6f6;
+                  height: calc(80vh);
+                  overflow: scroll; }
+                  #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content h4 {
+                    position: relative;
+                    z-index: 1;
+                    color: #00446b;
+                    font-size: 2.8rem;
+                    line-height: 3.2rem;
+                    padding: 3rem 0;
+                    margin: 0 5.7rem;
+                    font-weight: 700; }
+                    #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content h4 div {
+                      display: inline-block;
+                      padding: 0 1.5rem;
+                      margin-bottom: 5px;
+                      background-color: #f6f6f6; }
+                      #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content h4 div span {
+                        font-weight: normal; }
+                        #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content h4 div span::before {
+                          content: "\2022";
+                          font-size: 1.2em;
+                          margin-right: 8px; }
+                    #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content h4::before {
+                      border-top: 2px solid #e8e8e8;
+                      bottom: 0;
+                      content: "";
+                      left: 0;
+                      position: absolute;
+                      right: 0;
+                      top: 50%;
+                      width: 100%;
+                      z-index: -1; }
+                  #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item {
+                    width: 95%;
+                    margin-bottom: 1.5rem; }
+                    #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-title {
+                      color: #00446b;
+                      font-size: 20px;
+                      font-weight: 700;
+                      margin-bottom: 5px; }
+                    #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-body {
+                      padding: 0; }
+                      #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-body .vehicles-info {
+                        color: #00446b;
+                        font-size: 24px;
+                        font-weight: 600;
+                        width: 80%;
+                        margin: 0 auto;
+                        line-height: 20px; }
+                        #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-body .vehicles-info p {
+                          font-size: 1.6rem;
+                          font-weight: normal;
+                          margin: 5px auto; }
+                        #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-body .vehicles-info div:first-child {
+                          float: left;
+                          text-align: left; }
+                        #header .navbar ul.navbar-left .vehicles-nav .region .region-section .vehicles-section .vehicles-section-overlay .vehicles-content .vehicles-item .card-body .vehicles-info div:last-child {
+                          float: right;
+                          text-align: right; }
+      #header .navbar ul.navbar-left .shopping-nav {
+        height: 60px; }
+        #header .navbar ul.navbar-left .shopping-nav .region {
+          position: absolute;
+          top: 6rem;
+          left: -10.7rem;
+          height: 60px;
+          width: 1680px; }
+          #header .navbar ul.navbar-left .shopping-nav .region .shopping-content {
+            background-color: #f6f6f6;
+            height: calc(65vh);
+            padding: 20px 20px; }
+            #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left {
+              padding: 0; }
+              #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left .tranformIcon {
+                display: flex;
+                justify-content: center; }
+                #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left .tranformIcon .item {
+                  text-align: center;
+                  height: 200px;
+                  padding: 20px 10.5px;
+                  margin: 1px;
+                  width: 45%;
+                  margin: 5px;
+                  background-color: #fff;
+                  box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
+                  line-height: 100px; }
+                  #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left .tranformIcon .item i {
+                    color: #00446b;
+                    font-size: 34px;
+                    font-weight: 700; }
+                    #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left .tranformIcon .item i:hover {
+                      transform: scale(2); }
+                  #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-left .tranformIcon .item h4 {
+                    color: #00446b;
+                    font-size: 18px;
+                    font-weight: 700; }
+            #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-right {
+              margin-top: 20px;
+              padding-right: 20px;
+              text-align: left; }
+              #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-right h4 {
+                color: #00446b;
+                font-size: 18px;
+                font-weight: 700; }
+              #header .navbar ul.navbar-left .shopping-nav .region .shopping-content .shopping-right p {
+                height: 36px;
+                color: #007cc0;
+                font-size: 15px;
+                font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */
