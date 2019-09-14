@@ -1,0 +1,49 @@
+#footer {
+  background-color: $color-blue-2;
+  padding: 30px 80px;
+  .copyright {
+    @include text($color-white-0, $fs-0 - 1, $fw-normal);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      text-decoration: underline;
+      color: $color-white-0;
+    }
+    .rights {
+      max-width: 40%;
+      margin-left: 0;
+    }
+    .links {
+      max-width: 20%;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+        align-self: flex-start;
+        list-style: none;
+        li {
+          padding-left: 10px;
+          padding-bottom: 10px;
+          display: inline-block;
+          a {
+            padding-right: 10px;
+            border-right: 1px solid $color-white-0;
+          }
+        }
+      }
+    }
+  }
+  .brands{
+      padding: 30px 30px;
+      display: flex;
+      justify-content: space-between;
+      a{
+          svg{
+              width: 14rem; 
+              height: 6rem;
+              fill: $color-white-0;
+          }
+      }
+  }
+}

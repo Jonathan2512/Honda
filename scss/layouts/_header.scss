@@ -1,19 +1,22 @@
 #header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10000;
   .navbar {
     height: 6rem;
     background-color: $color-blue-2;
     margin: 0;
     padding: 0;
-    left: 0;
-    right: 0;
-    top: 0;
     ul {
-      display: flex;
       list-style: none;
+      i.fa-angle-up {
+        display: none;
+      }
       li {
         display: inline-block;
         position: relative;
-        border-right: 1px solid $color-blue-3;
         padding: 0 1.5rem;
         &:nth-child(6) {
           border-right: none;
@@ -21,16 +24,15 @@
         a {
           @include text($color-white-0, $fs-2 - 4, $fw-bold-1 - 200);
           text-decoration: none;
-          i.fa-angle-up {
-            display: none;
-          }
         }
       }
       &.navbar-left {
+        display: flex;
         line-height: 6rem;
         margin-bottom: 0;
         letter-spacing: 2px;
         li {
+          border-right: 1px solid $color-blue-3;
           &:hover {
             background-color: #06456a;
           }
@@ -70,7 +72,7 @@
                 position: absolute;
                 right: 0;
                 left: 0;
-                z-index: 102;
+                z-index: 999999;
                 .vehicles-menu-overlay {
                   text-align: center;
                   padding: 1rem 0;
@@ -87,6 +89,7 @@
                 }
               }
               .vehicles-section {
+                z-index: 99999;
                 left: 0;
                 margin: 0 auto;
                 position: absolute;
@@ -175,6 +178,7 @@
         .shopping-nav {
           height: 60px;
           .region {
+            z-index: 99999;
             position: absolute;
             top: 6rem;
             left: -10.7rem;
@@ -182,7 +186,7 @@
             width: 1680px;
             .shopping-content {
               background-color: rgb(246, 246, 246);
-              height: calc(65vh);
+              height: calc(100vh);
               padding: 20px 20px;
               .shopping-left {
                 padding: 0;
@@ -199,10 +203,10 @@
                     background-color: #fff;
                     box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
                     line-height: 100px;
-                    i{
+                    i {
                       @include text($color-blue-1, $fs-3 + 10, $fw-bold-1);
-                      &:hover{
-                        transform: scale(2)
+                      &:hover {
+                        transform: scale(2);
                       }
                     }
                     h4 {
@@ -211,16 +215,152 @@
                   }
                 }
               }
-              .shopping-right{
+              .shopping-right {
                 margin-top: 20px;
                 padding-right: 20px;
                 text-align: left;
-                h4{
+                h4 {
                   @include text($color-blue-1, $fs-2 - 2, $fw-bold-1);
                 }
-                p{
+                p {
                   height: 36px;
-                  @include text($color-blue-2, $fs-0 ,$fw-bold-1)
+                  @include text($color-blue-2, $fs-0, $fw-bold-1);
+                }
+              }
+            }
+          }
+        }
+      }
+      &.navbar-right {
+        height: 60px;
+        position: relative;
+        right: 0;
+        padding-left: 45%;
+        line-height: 60px;
+        margin-bottom: 0;
+        .heading {
+          @include text($color-white-0, $fs-0, $fw-bold-0);
+          a {
+            display: inline-block;
+            margin-right: 5px;
+            &:hover {
+              border-bottom: 1px solid $color-white-0;
+            }
+          }
+        }
+        .region {
+          z-index: 99999;
+          background-color: rgb(246, 246, 246);
+          &#discoverCollapse,
+          &#ownersCollapse {
+            .row {
+              display: block;
+            }
+            .arrow-up {
+              left: 50%;
+            }
+          }
+          &#engCollapse {
+            padding: 0;
+            max-width: 250px;
+            padding-top: 20px;
+            .arrow-up {
+              left: 90%;
+            }
+            .rowLanguage {
+              padding-left: 50px;
+            }
+          }
+          &#searchCollapse {
+            padding: 0;
+            left: -80.7rem;
+            .arrow-up {
+              left: 162%;
+            }
+            form {
+              background-color: rgb(246, 246, 246);
+              padding: 13px;
+              width: 800px;
+              .form-control {
+                display: inline-block;
+                height: 50px;
+                .row {
+                  .col-sm-2 {
+                    margin: 0 auto;
+                    .fa {
+                      @include text($color-blue-2, $fs-3, $fw-bold-1);
+                    }
+                    .btn-white {
+                      width: 100px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .arrow-up {
+            border-bottom: 15px solid #fff;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            position: absolute;
+            top: -14px;
+            width: 0;
+            left: 88%;
+          }
+          padding-top: 15px;
+          position: absolute;
+          padding-right: 20px;
+          padding-left: 20px;
+          top: 6rem;
+          width: 500px;
+          left: -20.7rem;
+          .row {
+            .social-links {
+              padding-left: 1.5rem;
+              li {
+                padding: 0 0.5rem;
+                i {
+                  display: inline-block;
+                  height: 2.4rem;
+                  width: 2.4rem;
+                  border-radius: 5rem;
+                  background-color: $color-blue-2;
+                  line-height: 2.4rem;
+                  padding-left: 0.7rem;
+                  @include text($color-white-0, $fs-1, $fw-bold-0 - 200);
+                }
+              }
+            }
+            .col-sm-12 {
+              width: 40%;
+              margin-right: 0;
+              margin-left: 0;
+              float: left;
+              margin-bottom: 10px;
+              padding-top: 10px;
+              .link-list {
+                position: relative;
+                h3 {
+                  margin-bottom: 15px;
+                }
+                ul {
+                  border-right: none;
+                  li {
+                    display: block;
+                    @include text($color-blue-2, $fs-0 - 1, $fw-bold-0);
+                    margin: 5px;
+                    margin-top: 0.1rem;
+                    padding: 0;
+                    line-height: 3.5rem;
+                  }
+                }
+                .wrapper {
+                  span {
+                    display: inline-block;
+                    @include text($color-blue-1, $fs-1, $fw-bold-0);
+                    line-height: 2.5rem;
+                  }
                 }
               }
             }

@@ -1,0 +1,83 @@
+#second-carousel {
+  background-color: rgb(245, 245, 245);
+  h1 {
+    text-align: center;
+    @include text($color-blue-2, $fs-3 + 30, $fw-normal);
+    letter-spacing: 5px;
+  }
+  #carousel-content {
+    button {
+      position: absolute;
+      top: 50%;
+      z-index: 100;
+      visibility: hidden;
+      &::after {
+        z-index: 100;
+        visibility: visible;
+        display: block;
+        position: absolute;
+        background-color: $color-white-0;
+        @include text($color-blue-2, $fs-3, $fw-bold-1);
+        padding: 1.5rem;
+        width: 45px;
+        height: 60px;
+        line-height: 25px;
+        border-radius: 10%;
+      }
+      &.slick-prev {
+        left: 0;
+        &::after {
+          content: "<";
+        }
+      }
+      &.slick-next {
+        right: 24px;
+        &::after {
+          content: ">";
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      .content-overlay {
+        position: absolute;
+        top: 30%;
+        z-index: 100;
+        left: 40%;
+        transform: translateX(-60%);
+        h2 {
+          @include text($color-white-0, $fs-3 + 15, $fw-bold-1);
+          letter-spacing: 5px;
+        }
+        p {
+          @include text($color-white-0, $fs-0, $fw-normal);
+          padding-right: 60%;
+          margin-top: 15px;
+        }
+        .vehicle-info {
+          display: flex;
+          margin-left: -15px;
+          justify-content: space-around;
+          width: 30%;
+          span{
+            @include text($color-white-0, $fs-3 + 15, $fw-normal);
+          }
+        }
+        .vehicle-btn{
+            display: flex;
+            margin-top: 15px;
+            a{
+                margin-right: 15px;
+            }
+        }
+      }
+      .content-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

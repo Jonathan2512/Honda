@@ -1,0 +1,21 @@
+.btn-red {
+  @include button(
+    $color-white-0,
+    $fs-1 - 1,
+    $fw-bold,
+    $color-red-2,
+    $pd-1 - 10,
+    $pd-2 - 10,
+    $color-red-2,
+    $color-red-2,
+    $color-white-0,
+    $color-red-2
+  );
+  display: block;
+  z-index: 150;
+  line-height: 3.3rem;
+  width: 20rem;
+  height: 3.3rem;
+  border-radius: 1.95rem;
+  text-transform: uppercase;
+}

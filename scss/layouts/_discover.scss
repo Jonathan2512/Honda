@@ -1,0 +1,101 @@
+#discover-section {
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 100px;
+
+  .discover-title {
+    text-align: center;
+    h3 {
+      @include text($color-blue-1, $fs-3 + 30, $fw-normal);
+      letter-spacing: 5px;
+    }
+    h5 {
+      @include text($color-blue-1, $fs-0 - 1, $fw-normal);
+      letter-spacing: 1px;
+    }
+  }
+  .discover-content {
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    .card {
+      height: 464px;
+      &.item-1 {
+        background-image: url("/Honda_layout/imgs/vehicles/Honda_T3_Amazon-1400-2x.webp");
+      }
+      &.item-2 {
+        background-image: url("/Honda_layout/imgs/vehicles/LittleLeagueWinnersPostT31400.webp");
+      }
+      &.item-3 {
+        background-image: url("/Honda_layout/imgs/vehicles/Music-Festival-Discover-T3-1400-2x.webp");
+      }
+      &.item-4 {
+        background-image: url("/Honda_layout/imgs/vehicles/CMBS-T3-1400-2x.webp");
+      }
+      &.item-5 {
+        background-image: url("/Honda_layout/imgs/vehicles/Honda_T3_LittleLeague-Champs-1400-2x.webp");
+      }
+      .card-body {
+        position: absolute;
+        top: 65%;
+        h4 {
+          @include text($color-blue-1, $fs-3, $fw-bold-1);
+        }
+        p {
+          @include text($color-blue-1, $fs-1, $fw-normal);
+          word-spacing: 2px;
+          margin-bottom: 20px;
+        }
+        a {
+          @include text($color-blue-4, $fs-0, $fw-bold-1);
+          text-decoration: none;
+          &:hover {
+            color: $color-blue-1;
+            transition: 1s;
+          }
+        }
+      }
+      &.item-6 {
+        .twitter-logo {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          i {
+            @include text($color-blue-4, $fs-3 + 10, $fw-normal);
+          }
+        }
+        .card-body {
+          top: 30%;
+          text-align: left !important;
+          h4 {
+            display: flex;
+            @include text($color-blue-4, $fs-0, $fw-bold-1);
+            img {
+              border-radius: 5px;
+            }
+            .twitter-text {
+              margin-left: 10px;
+              span {
+                margin-top: 5px;
+                display: block;
+                @include text($color-blue-4, $fs-0, $fw-normal);
+              }
+            }
+          }
+          p {
+            @include text($color-black, $fs-0 + 2, $fw-normal);
+          }
+          a {
+            @include text($color-blue-4, $fs-0 + 2, $fw-normal);
+          }
+        }
+      }
+    }
+  }
+  .more-news{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-top: 20px;
+      font-weight: $fw-bold-1 !important;
+  }
+}

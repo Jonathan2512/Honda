@@ -1,0 +1,37 @@
+#search-section {
+  .row {
+    margin: 0;
+    padding: 10px 20px;
+    .col-sm-10 {
+      .form-inline {
+        i {
+          margin-left: 5px;
+          display: inline-block;
+          margin-right: 20px;
+          @include text($color-blue-1, $fs-3, $fw-bold-0);
+        }
+        .form-control {
+          width: 80%;
+          height: 40px;
+          box-shadow: none;
+          border: none;
+          @include text($color-blue-1, $fs-3, $fw-normal);
+          letter-spacing: 2px;
+          margin-right: 20px;
+          &:focus {
+            outline: 2px solid #62c7ff;
+          }
+        }
+      }
+      border-right: 1px solid #62c7ff;
+    }
+    .col-sm-2{
+        text-align: center;
+        padding-top: 10px;
+        a{
+            @include text($color-blue-1, $fs-1, $fw-normal);
+           
+        }
+    }
+  }
+}

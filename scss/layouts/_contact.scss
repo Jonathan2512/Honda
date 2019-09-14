@@ -1,0 +1,45 @@
+#contact-section {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  .socials-list {
+    h3 {
+      @include text($color-blue-1, $fs-0 + 5, $fw-bold-1);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      padding-left: 50%;
+      transform: translateX(-25%);
+      li {
+        padding: 0 0.5rem;
+        i {
+          display: inline-block;
+          height: 2.4rem;
+          width: 2.4rem;
+          border-radius: 5rem;
+          background-color: $color-blue-4;
+          line-height: 2.4rem;
+          padding-left: 0.7rem;
+          @include text($color-white-0, $fs-1, $fw-bold-0 - 200);
+        }
+      }
+    }
+  }
+  .informed{
+      padding-right: 100px;
+      p{
+        @include  text($color-blue-1, $fs-1 , $fw-normal);
+      }
+      button {
+        margin-left: 70px;
+        display: block;
+        i{
+            margin-right: 5px;
+        }
+    }
+  }
+}

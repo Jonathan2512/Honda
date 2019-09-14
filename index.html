@@ -15,6 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -61,22 +62,22 @@
                                     <div class="vehicles-menu-overlay">
                                         <ul class="vehicles-items">
                                             <li>
-                                                <a class="scollLink" href="#cars">Cars</a>
+                                                <a class="scrollLink" href="#cars">Cars</a>
                                             </li>
                                             <li>
-                                                <a class="scollLink" href="#suv">Suvs & Crossovers</a>
+                                                <a class="scrollLink" href="#suv">Suvs & Crossovers</a>
                                             </li>
                                             <li>
-                                                <a class="scollLink" href="#minivan">Minivan & Truck</a>
+                                                <a class="scrollLink" href="#minivan">Minivan & Truck</a>
                                             </li>
                                             <li>
-                                                <a class="scollLink" href="#elec">Electrified</a>
+                                                <a class="scrollLink" href="#elec">Electrified</a>
                                             </li>
                                             <li>
-                                                <a class="scollLink" href="#future">Future</a>
+                                                <a class="scrollLink" href="#future">Future</a>
                                             </li>
                                             <li>
-                                                <a class="scollLink" href="#pre">Pre-Owned</a>
+                                                <a class="scrollLink" href="#pre">Pre-Owned</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -99,7 +100,6 @@
                                                                 <div>
                                                                     <span>$19,550</span>
                                                                     <p>
-                                                                        Starting <br>
                                                                         MSRP*
                                                                     </p>
                                                                 </div>
@@ -920,44 +920,981 @@
             </div>
             <div class="col-md-6">
                 <ul class="navbar-right">
-                    <li class="dealers-nav">
+                    <li class="heading">
                         <i class="fa fa-map-marker"></i>
-                        <span>Dealers</span>
+                        <a>Dealers</a>
                     </li>
                     <li class="owners-nav">
                         <div class="heading">
-                            <span>Owners</span>
+                            <a data-toggle="collapse" href="#ownersCollapse" role="button" aria-expanded="false"
+                                aria-controls="ownersCollapse">Owners</a>
                             <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-up"></i>
+                        </div>
+                        <div class="region collapse" id="ownersCollapse">
+                            <div class="arrow-up"></div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>Your Honda</h3>
+                                        <ul>
+                                            <li>Owners Site</li>
+                                            <li> How to Video & Guides by Vehicle</li>
+                                            <li> Customer Service</li>
+                                            <li>Owner's Manual & Warranty</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>Helpful Links</h3>
+                                        <ul>
+                                            <li>Schedule Service</li>
+                                            <li>Parts & Service</li>
+                                            <li>Instant Answers </li>
+                                            <li>Certified Body Shop Locator eStore</li>
+                                            <li>Roadside Assistance</li>
+                                            <li>Pay My Bill</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>Recalls</h3>
+                                        <div class="wrapper">
+                                            <span>Is your Honda affected by a recall?</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button class="btn btn-blue">CHECK YOUR VEHICLE</button>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>How-to videos and guides</h3>
+                                        <div class="wrapper">
+                                            <span>Find manuals, instructional guides, how-to videos and more here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button class="btn btn-blue">Go</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                     </li>
                     <li class="discover-nav">
                         <div class="heading">
-                            <span>Discover</span>
+                            <a data-toggle="collapse" href="#discoverCollapse" role="button" aria-expanded="false"
+                                aria-controls="discoverCollapse">Discover</a>
                             <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-up"></i>
+                        </div>
+                        <div class="region collapse" id="discoverCollapse">
+                            <div class="arrow-up"></div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>Innovation</h3>
+                                        <ul>
+                                            <li>Honda Safety</li>
+                                            <li>Honda Sensing</li>
+                                            <li>Electrified Vehicles</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="link-list">
+                                        <h3>News & Events</h3>
+                                        <ul>
+                                            <li>Spotlight</li>
+                                            <li>Technology</li>
+                                            <li>Comunity</li>
+                                            <li>Events</li>
+                                            <li>Racing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <ul class="social-links">
+                                    <li><i class="fa fa-facebook"></i></li>
+                                    <li><i class="fa fa-twitter"></i></li>
+                                    <li><i class="fa fa-youtube"></i></li>
+                                    <li><i class="fa fa-instagram"></i></li>
+                                    <li><i class="fa fa-pinterest"></i></li>
+                                    <li><i class="fa fa-linkedin"></i></li>
+                                    <li><i class="fa fa-tumblr"></i></li>
+                                    <li><i class="fa fa-snapchat"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="english-nav">
                         <div class="heading">
-                            <span>English</span>
+                            <a data-toggle="collapse" href="#engCollapse" role="button" aria-expanded="false"
+                                aria-controls="engCollapse">English</a>
                             <i class="fa fa-angle-down"></i>
+                            <i class="fa fa-angle-up"></i>
+                        </div>
+                        <div class="region collapse" id="engCollapse">
+                            <div class="arrow-up"></div>
+                            <div class="row rowLanguage">
+                                <h3>Choose Your Language</h3>
+                                <div class="optionalLanguage">
+                                    <button class="btn btn-blue">English</button>
+                                </div>
+
+                                <div class="optionalLanguage">
+                                    <button class="btn btn-white">Espanol</button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="search-nav">
                         <div class="heading">
-                            <i class="fa fa-search"></i>
+                            <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false"
+                                aria-controls="searchCollapse"> <i class="fa fa-search"></i></a>
+                        </div>
+                        <div class="region collapse" id="searchCollapse">
+                            <div class="arrow-up"></div>
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <i class="fa fa-search" style="font-size: 24px; color : #007cc0"></i>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="email">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-white">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- first caoursel -->
+    <section id="first-carousel">
+        <div class="content ">
+            <div class="content-overlay">
+                <h4>Key by Amazon In-Car Delivery</h4>
+                <a class="btn btn-red">Learn More</a>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
+            </div>
+            <div class="content-img">
+                <img src="imgs/vehicles/Honda-MusicFestival-Homepage-1400-2x.webp" class="img-reponsive">
+            </div>
+        </div>
+        <div class="content ">
+            <div class="content-overlay">
+                <h4>Key by Amazon In-Car Delivery</h4>
+                <a class="btn btn-red">Learn More</a>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
+            </div>
+            <div class="content-img">
+                <img src="imgs/vehicles/Autos_Amazon-in-Car_Homepage_1400.webp" class="img-reponsive">
+            </div>
+        </div>
+        <div class="content ">
+            <div class="content-overlay">
+                <h4>Key by Amazon In-Car Delivery</h4>
+                <a class="btn btn-red">Learn More</a>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit</h5>
+            </div>
+            <div class="content-img">
+                <img src="imgs/vehicles/MY20-Civic-Hatch-Hero-1400-2x.webp" class="img-reponsive">
+            </div>
+        </div>
 
-    <!-- Optional JavaScript -->
+    </section>
+    <!-- homepage -->
+    <section id="homepage">
+        <div class="homepage-content">
+            <div class="items-content">
+                <div class="item item-1">
+                    <div class="item-1-content">
+                        <h3> The Best Midside Two-Row SUV</h3>
+                        <h5>The Pass proves that it has more to offer than any other SUV its class</h5>
+                        <button class="btn btn-blue">LEARN MORE</button>
+                        <br>
+                        <span>Elite shown in White Diamond Pearl.</span>
+                    </div>
+                </div>
+                <div class="item item-2">
+                    <div class="item-2-content">
+                        <h4>BUILD & PRICE</h4>
+                        <h3>Personalize a 2019 ACCORD SEDAN to make it your own.</h3>
+                        <button class="btn btn-blue">BUILD MY VEHICLE</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- second carousel -->
+    <section id="second-carousel">
+        <h1>OUR VEHICLES</h1>
+        <div id="carousel-content">
+            <div class="content">
+                <div class="content-overlay">
+                    <h2>CLARITY</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, unde quis. Quae numquam enim
+                        iure
+                        reprehenderit, laudantium eos velit praesentium illo </p>
+                    <div class="vehicle-info">
+                        <div>
+                            <span>$19,550</span>
+                            <p>
+                                MSRP*
+                            </p>
+                        </div>
+                        <div>
+                            <span>36/25</span>
+                            <p>
+                                Hwy/City
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vehicle-btn">
+                        <a class="btn btn-white">EXPLORE</a>
+                        <a class="btn btn-red">BUILD</a>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <img src="./imgs/vehicles/Clarity-1400x-2x.webp" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay">
+                    <h2>CPO</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, unde quis. Quae numquam enim
+                        iure
+                        reprehenderit, laudantium eos velit praesentium illo </p>
+                    <div class="vehicle-info">
+                        <div>
+                            <span>$19,550</span>
+                            <p>
+                                MSRP*
+                            </p>
+                        </div>
+                        <div>
+                            <span>36/25</span>
+                            <p>
+                                Hwy/City
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vehicle-btn">
+                        <a class="btn btn-white">EXPLORE</a>
+                        <a class="btn btn-red">BUILD</a>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <img src="./imgs/vehicles/CPO-Non-VLP-FullLine1400new-x2.webp" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-overlay">
+                    <h2>ODYSEY</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, unde quis. Quae numquam enim
+                        iure
+                        reprehenderit, laudantium eos velit praesentium illo </p>
+                    <div class="vehicle-info">
+                        <div>
+                            <span>$19,550</span>
+                            <p>
+                                MSRP*
+                            </p>
+                        </div>
+                        <div>
+                            <span>36/25</span>
+                            <p>
+                                Hwy/City
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vehicle-btn">
+                        <a class="btn btn-white">EXPLORE</a>
+                        <a class="btn btn-red">BUILD</a>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <img src="./imgs/vehicles/MY19-Accord-full-line-1400-2x.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shopping tool -->
+    <section id="shopping-tools">
+        <div class="card-deck ">
+            <div class="card item">
+                <div class="card-title">
+                    <i class="fa fa-adjust"></i>
+                </div>
+                <div class="card-body text-center">
+                    <h3>BUILD & PRICE</h3>
+                    <p class="card-text">Customize a Honda vehicle to make it very own</p>
+                    <button class="btn btn-blue">GO</button>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card-title">
+                    <i class="fa fa-apple"></i>
+                </div>
+                <div class="card-body text-center">
+                    <h3>Compare</h3>
+                    <p class="card-text">Choose up to four Honda vehicles to find the right one for you</p>
+                    <button class="btn btn-blue">GO</button>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card-title">
+                    <i class="fa fa-anchor"></i>
+                </div>
+                <div class="card-body text-center">
+                    <h3>Current Offers</h3>
+                    <p class="card-text">Find out how easy it is to get into a new vehicle today</p>
+                    <button class="btn btn-blue">GO</button>
+                </div>
+            </div>
+            <div class="card item">
+                <div class="card-title">
+                    <i class="fa fa-balance-scale"></i>
+                </div>
+                <div class="card-body text-center">
+                    <h3>Search Inventory</h3>
+                    <p class="card-text">Find your Honda vehicle at a dealer near you</p>
+                    <button class="btn btn-blue">GO</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck pages-section">
+            <div class="card page-1">
+                <button class="btn btn-trans">SHOP CERTIFIED</button>
+            </div>
+            <div class="card page-2">
+                <div class="card-body">
+                    <h3> How To Video and Guides</h3>
+                    <p>
+                        Find owner manuals, instructional guides, how-to videos and helpful links designed to help you
+                        make the most of your Honda.
+                    </p>
+                </div>
+                <button class="btn btn-trans">GO</button>
+            </div>
+        </div>
+    </section>
+    <!-- discover section -->
+    <section id="discover-section">
+        <div class="discover-title">
+            <h3>Discover Honda</h3>
+            <h5>Explore the world of Honda through our latest news, events and videos.</h5>
+        </div>
+        <div class="card-columns discover-content">
+            <div class="card item-1">
+                <div class="card-body text-center">
+                    <h4>Key by Amazon In-Car Delivery</h4>
+                    <p>Now you can have Amazon packages delivered* directly inside your vehicle with an active
+                        HondaLink® Remote Package; available on select trims.</p>
+                    <a href="#s">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="card item-2">
+                <div class="card-body text-center">
+                    <h4>Congratulations to Rowan Little League!</h4>
+                    <p>We’re proud to be an official sponsor of Little League Softball® and the countless little moments
+                        that made this big win possible for the team in Salisbury, North Carolina.</p>
+                    <a href="#s">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="card item-3">
+                <div class="card-body text-center">
+                    <h4>Buckle Up, It’s Festival Season!</h4>
+                    <p>Enter for a chance to win a Honda Civic and automatically be entered for a chance to win VIP
+                        passes to a music festival this summer*.</p>
+                    <a href="#s">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="card item-4">
+                <div class="card-body text-center">
+                    <h4>What is Honda Sensing®?</h4>
+                    <p>Honda Sensing® is our exclusive intelligent suite of safety and driver-assistive technologies
+                        designed to alert you to things you might miss while driving.*</p>
+                    <a href="#s">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="card item-5">
+                <div class="card-body text-center">
+                    <h4>Louisiana Little League® Wins Big</h4>
+                    <p>As a proud 23-year sponsor of Little League®, Honda congratulates the East Bank team of River
+                        Ridge, Louisiana, for winning the Little League Baseball® World Series.</p>
+                    <a href="#s">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="card item-6">
+                <div class="twitter-logo">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="card-body text-center">
+                    <h4>
+                        <img src="https://pbs.twimg.com/profile_images/1145731650296274950/lBoX0UHJ_normal.png">
+                        <div class="twitter-text">
+                            Honda <span>@honda</span>
+                        </div>
+                    </h4>
+                    <p>Queuing up on #NationalVideoGamesDay? Celebrate gaming all month with us on our road to
+                        @TwitchCon. We… <a href="https://t.co/GleTEzhr67"> https://t.co/GleTEzhr67</a></p>
+                    <a href="#s">3:03 PM - 13/09/2019</a>
+                </div>
+            </div>
+        </div>
+        <div class="more-news">
+            <button class="btn btn-red">MORE NEWS & EVENTS</a>
+        </div>
+    </section>
+    <!-- search section -->
+    <section id="search-section">
+        <div class="row">
+            <div class="col-sm-10">
+                <form class="form-inline">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <a class="btn btn-white" href="#S"> SEARCH </a>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <a class="back-to-top" href="#first-carousel">
+                    <span>Back To Top</span>
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- service section -->
+    <section id="services-list">
+        <div class="service-item">
+            <h3>Vehicles</h3>
+            <ul>
+                <li>Accord Models</li>
+                <li>Civic Models</li>
+                <li>Clarity Series</li>
+                <li>CR-V SUV</li>
+                <li>Fit Hatchback</li>
+                <li>HR-V Crossover</li>
+                <li>Insight Hybrid</li>
+                <li>Odyssey Minivan</li>
+                <li>Passport</li>
+                <li>Pilot SUV</li>
+                <li>Ridgeline Truck</li>
+                <li>Future Vehicles</li>
+                <li>Electrified Vehicles</li>
+                <li>Honda Certified Pre-Owned</li>
+                <li>All Vehicles</li>
+            </ul>
+        </div>
+        <div class="service-item">
+            <h3>Shopping Tools</h3>
+            <ul>
+                <li>Build & Price</li>
+                <li>Search Inventory</li>
+                <li>Current Offers</li>
+                <li>Compare Vehicles</li>
+                <li>Apply for Financing</li>
+                <li>Estimate Payments</li>
+                <li>Lease or Finance?</li>
+            </ul>
+        </div>
+        <div class="service-item">
+            <h3>Discover Honda</h3>
+            <ul>
+                <li>About Us</li>
+                <li>News & Events</li>
+                <li>Awards, Accolades & Ratings</li>
+                <li>Auto Shows</li>
+                <li>Serial One</li>
+                <li>Careers</li>
+                <li>ASIMO® Robot</li>
+                <li>Investor Relations</li>
+                <li>Corporate Social Responsibility</li>
+                <li>Honda in America</li>
+                <li>Honda Worldwide</li>
+            </ul>
+        </div>
+        <div class="service-item">
+            <h3>Help & Support</h3>
+            <ul>
+                <li>FAQ</li>
+                <li>Customer Service</li>
+                <li>Awards, Accolades & Ratings</li>
+                <li>Financial Services</li>
+                <li>Roadside Assistance</li>
+                <li>Mobility Assistance Program</li>
+                <li>Rear Entertainment System Accessibility for Individuals with Disabilities</li>
+            </ul>
+        </div>
+        <div class="service-item">
+            <h3>Owners</h3>
+            <ul>
+                <li>Honda Owners Site</li>
+                <li>Schedule Service</li>
+                <li>Parts & Service</li>
+                <li>Instant Answers</li>
+                <li>Certified Body Shop Locator</li>
+                <li>eStore</li>
+                <li>Roadside Assistance</li>
+                <li>Pay My Bill</li>
+                <li>Radio or Navi Code</li>
+                <li>HondaLink®</li>
+                <li>Wi-Fi Hotspot Data Plans</li>
+                <li>Owner Resources</li>
+                <li>Safety Recall</li>
+            </ul>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact-section">
+        <div class="socials-list">
+            <h3>Stay In Touch</h3>
+            <ul class="social-links">
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-youtube"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-pinterest"></i></li>
+                <li><i class="fa fa-linkedin"></i></li>
+                <li><i class="fa fa-tumblr"></i></li>
+                <li><i class="fa fa-snapchat"></i></li>
+            </ul>
+        </div>
+        <div class="informed">
+            <p>Receive the latest news and exclusive updates.</p>
+            <button class="btn btn-white"><i class="fa fa-envelope"></i> STAY INFORMED</button>
+        </div>
+    </section>
+    <!-- footer section -->
+    <section id="footer">
+        <div class="copyright">
+            <div class="rights">
+                ©2019 <a href="http://www.honda.com" target="_blank">American Honda Motor Co., Inc.</a> All information
+                contained herein applies to U.S. vehicles only. For
+                non-U.S.-distributor information go to <a href="http://world.honda.com/link/"
+                    target="_blank">world.honda.com</a>.
+            </div>
+            <div class="links">
+                <ul>
+                    <li> <a href="#l">Vehicle Data Privacy </a></li>
+                    <li> <a href="#l"> Privacy Policy </a></li>
+                    <li> <a href="#l">Prop 65 Info</a></li>
+                    <li><a href="#l">Terms & Conditions</a></li>
+                    <li> <a href="#l">SMS Terms</a></li>
+                    <li> <a href="#l">SiteMap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="brands">
+            <a href="http://automobiles.honda.com/">
+                <svg class="Honda_Automotive_SVG" viewBox="0 0 110 50" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Automotive_SVG {
+                                fill: #fff;
+                                fill-rule: evenodd;
+                                height: 50px;
+                                width: 68px;
+                            }
+
+                            @media only screen and (min-width: 550px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Automotive_SVG {
+                                    width: 121px;
+                                }
+                            }
+
+                            @media only screen and (min-width: 768px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Automotive_SVG {
+                                    height: 50px;
+                                    width: 70px;
+                                }
+                            }
+
+                            @media only screen and (min-width: 1024px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Automotive_SVG {
+                                    height: 60px;
+                                }
+                            }
+
+                            @media only screen and (min-width: 1400px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Automotive_SVG {
+                                    height: 65px;
+                                }
+                            }
+                        </style>
+                    </defs>
+
+                    <g>
+                        <path d="M1566.75,5032.71v-1.6h1.69l-0.65-1.14h-4.47l-0.64,1.14h1.67v1.6h-5.51v
+                                -1.6h1.66l2.91-4.83h-2.02v-1.62h7.02l3.94,6.45H1574v1.6h-7.25Zm-1.2
+                                -6.72-1.39,2.47h2.78Zm-11.22,6.72h-8.72v-1.61h1.67v-4.82h-1.67v
+                                -1.61h8.72c2.04,0,4.44.77,4.44,3.84C1558.77,5031.85,1556.57,5032.71,
+                                1554.33,5032.71Zm-1.27-6.43h-2.4v4.82h2.37a2.148,2.148,0,0,0,2.17
+                                -2.41A2.176,2.176,0,0,0,1553.06,5026.28Zm-3.87-7.39c-5.92.61-18.19,
+                                1.06-24.13,0-6.14-1.1-6.86-3.98-7.82-8.88a125.719,125.719,0,0,1-.83
+                                -13.8s-0.59-7.23,6.47-8.45a151.446,151.446,0,0,1,26.21-.35s7.7,0.41,
+                                8.18,6.62a83.971,83.971,0,0,1-.65,16.36C1556.2,5012.97,1555.1,5018.28,
+                                1549.19,5018.89Zm6.19-24.46c-0.44-5.64-7.41-5.79-7.41-5.79a136.7,
+                                136.7,0,0,0-23.8.32c-6.42,1.11-5.9,7.9-5.9,7.9a119.079,119.079,0,0,0,
+                                .76,12.77c0.87,4.46,1.4,6.75,6.95,7.9s17.09,0.59,22.46.04,6-5.24,
+                                6.38-7.59A83.753,83.753,0,0,0,1555.38,4994.43Zm-12.16,22.72s-1.05
+                                -3.68-1.62-5.44a3.148,3.148,0,0,0-2.84-2.04,16.736,16.736,0,0,0
+                                -4.28.08c-2.37.4-3.27,4.8-3.27,4.8l-0.69,2.64-4.11-.25-1.88-27.02,
+                                2.8-.21s1.86,7.71,3.04,12.7,4.83,4.9,4.83,4.9l3.32-.06c4.26,0.02,5.68
+                                -7.6,5.68-7.6l2.17-9.88,2.9,0.15-1.99,26.97Zm-20.75,7.25c1.6,0,
+                                6.57.19,6.57,4.29s-4.95,4.31-6.57,4.31-6.59-.18-6.59-4.31C1515.88,
+                                5024.63,1520.88,5024.4,1522.47,5024.4Zm0,6.99c1.58,0,2.84-.73,2.84
+                                -2.7,0-1.99-1.29-2.69-2.84-2.69-1.58,0-2.83.75-2.83,2.69C1519.64,
+                                5030.68,1520.92,5031.39,1522.47,5031.39Zm-13.98-.29h1.67v-1.64h
+                                -5.12v1.64h1.67v1.62H1500v-1.62h1.67v-4.82H1500v-1.62h6.71v1.62h
+                                -1.67v1.6h5.12v-1.6h-1.67v-1.62h6.7v1.62h-1.67v4.82h1.67v1.62h-6.7v
+                                -1.62Zm22.89-4.82h-1.66v-1.62h6.7l4.74,6.04v-4.42h-1.66v
+                                -1.62h5.35v1.62h-1.65v6.43h-5.05l-4.75-6.05v4.45h1.64v1.6h-5.32v
+                                -1.6h1.65Z" transform="translate(-1500 -4986.97)"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://www.acura.com/">
+                <svg class="Acura_SVG" viewBox="0 0 115 50" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g>
+                        <path
+                            d="M1668.48,5019.56h3.37l7.52,12.43h-3.59l-5.62-9.47-2.98,5.02h4.83l1.46,2.35h-7.56l-1.36,2.1H1661Zm66.62,0h3.37l7.53,12.43h-3.59l-5.63-9.47-2.98,5.02h4.84l1.46,2.35h-7.57l-1.36,2.1h-3.55Zm-55.95,6.21v1.65c0.08,3.26,1.91,4.64,4.75,4.57h9.39v-2.55h-9.35c-1.57.04-1.68-1.05-1.72-2.11v-3.18c0.04-.98.15-2.08,1.72-2.04h9.35v-2.55h-9.39c-2.84-.07-4.67,1.33-4.75,4.57v1.64Zm35.62,6.22h-3.03v-12.43h11.37c3.97,0,4.98,5.26,2.21,7.07a3.268,3.268,0,0,1,1.46,2.47c0.07,0.49.09,2.89,0.09,2.89h-2.99l-0.1-2.55a1.8,1.8,0,0,0-1.87-1.83h-5.78l-0.6-2.66h6.78a1.378,1.378,0,1,0,0-2.73h-7.54v9.77Zm-12.36,0h2.66c3.25-.07,4.64-1.9,4.56-4.75v-7.68h-2.99v8.3c0.04,1.57-1.05,1.68-2.11,1.72h-4.34c-0.98-.04-2.08-0.15-2.04-1.72v-8.3h-3.07v7.7c-0.08,2.84,1.33,4.66,4.56,4.73h2.77Zm14.19-33.32c-0.25-4.64-1.84-8.05-4.01-9.91-2.33-2.01-6.7-2.77-10.09-2.76-3.38-.01-7.75.75-10.08,2.76-2.17,1.86-3.76,5.27-4,9.91-0.23,4.35.73,9.12,3.2,11.81,2.39,2.65,7.18,3.49,10.88,3.48h0.01c3.7,0.01,8.49-.83,10.88-3.48C1715.86,5007.79,1716.82,5003.02,1716.6,4998.67Zm-14.89-11.49c0.48-.03.58-0.02,0.79-0.02s0.31-.01.79,0.02l0.01,10.16h-1.6Zm-11.4,15.77c-0.15-1.75-.67-8.11,1.86-11.75a8.657,8.657,0,0,1,4.27-3.19,18.523,18.523,0,0,1,4.9-.82c-1.05,2.55-3.18,8.03-3.6,9.25a22.421,22.421,0,0,0-1.37,5.02c-0.27,2.21-.76,7.71-0.89,10.1C1692.49,5010.12,1690.69,5007.42,1690.31,5002.95Zm18.91,8.75a20.927,20.927,0,0,1-13.45,0h0a131.868,131.868,0,0,1,5.79-12.83h1.87a129.836,129.836,0,0,1,5.8,12.83h-0.01Zm5.47-8.75c-0.39,4.47-2.18,7.17-5.17,8.61-0.13-2.39-.62-7.89-0.89-10.1a22.327,22.327,0,0,0-1.38-5.02c-0.41-1.22-2.55-6.7-3.59-9.25a18.579,18.579,0,0,1,4.9.82,8.657,8.657,0,0,1,4.27,3.19C1715.35,4994.84,1714.84,5001.2,1714.69,5002.95Z"
+                            transform="translate(-1661 -4986)"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://powersports.honda.com">
+                <svg class="Honda_Automotive_SVG" viewBox="0 0 90 52" xmlns="http://www.w3.org/2000/svg">
+                    <defs> </defs>
+                    <g>
+                        <path
+                            d="M7.18,41.94l.9.11a.51.51,0,0,1,.46.56v1.11H4.36V42.65a.52.52,0,0,1, .42-.6h0l.91-.11V41H.3v.91l.9.11a.51.51,0,0,1,.46.56v3.54a.52.52,0, 0,1-.42.6h0l-.9.1v.92H5.72v-.92l-.91-.1a.52.52,0,0,1-.45 -.59h0V45.08H8.53v1.07a.52.52,0,0,1-.42.6h0l-.9.1v.92H12.6v-.92l-.91 -.1a.52.52,0,0,1-.45-.59h0v-3.5a.52.52,0,0,1,.42-.6h0l.91 -.11V41H7.18ZM43.33,41h-6.7v.91l.8.09a.47.47,0,0,1, .48.55v3.57a.53.53,0,0,1-.44.6h0l-.91.1v.92h6.78c2.42,0,4.41-1,4.41 -3.37S45.75,41,43.33,41m-.5,5.45H40.56V42.32h2.27c1.34,0,1.8.63,1.8, 2.08s-.46,2.08-1.8,2.08Zm16.31.28a.92.92,0,0,1-.7-.53l-3.12 -4.75A.76.76,0,0,0,54.6,41H49.46v.91l1.23.14a.35.35,0,0,1,.21.57l -2.3,3.74a.62.62,0,0,1-.48.36l-.91.1v.92h4.33v-.92l-.75-.07c-.32,0 -.49-.26-.33-.52l.35-.56H55l.31.47c.27.41-.07.58-.36.61l -.77.07v.92H60v-.92l-.86-.09m-7.6-2.25,1.28-2.07,1.36,2.07ZM31.79, 41.94l.91.11a.51.51,0,0,1,.46.56V46l-3.58-4.7a.69.69,0,0,0-.69 -.29H24.24v.91l.9.11a.51.51,0,0,1,.46.56v3.54a.52.52,0,0,1-.42.6h0l -.9.1v.92h4.33v-.92l-.91-.1a.52.52,0,0,1-.45-.57v-3.4l3.58, 4.7a.69.69,0,0,0,.69.29h3.29V42.65a.51.51,0,0,1,.41-.59h0l.91 -.11V41H31.79ZM18.41,40.8c-4.41,0-5.54,1.92-5.54,3.6S14,48,18.41, 48s5.54-1.92,5.54-3.6-1.14-3.6-5.54-3.6m0,5.92C16.7,46.72,16,46,16, 44.4s.71-2.32,2.42-2.32,2.41.71,2.41,2.32-.71,2.32-2.41,2.32Zm-2.36 -7-3.26-3,16.47-1.9,8,4.91H16ZM43.8,26.89,9.11,33.37l3,2.78,16 -2a.46.46,0,0,1-.3-.45.45.45,0,0,1,.41-.43l9.47-1.38a6.59,6.59,0,0, 0,1.79-.55,6.25,6.25,0,0,0,1.5-1c.21-.19.91-.9,1.36-1.4l.74-.84c.21 -.24.66-.78.84-1a.11.11,0,0,0-.11-.17Zm5.43-7.58L5.92,30.42l2.61, 2.41,13.33-2.54a.51.51,0,0,1-.35-.47.43.43,0,0,1,.36-.43L43.55, 25.2a5.42,5.42,0,0,0,1.79-.7,5.55,5.55,0,0,0,1.3-1.12c.28-.32.79-1, 1.17-1.48s.52-.74.71-1,.66-1,.86-1.39a.13.13,0,0,0-.05-.18.13.13,0, 0,0-.1,0ZM43.5,6.76C44.1,6.52,47,5.28,47.61,5l3.26-1.46c.78-.35,3.06 -1.42,3.4-1.58,1.6-.77,3.58-1.71,4-1.93a.16.16,0,0,1,.22.2,29.42, 29.42,0,0,1-1.19,3.19,20.67,20.67,0,0,1-1.08,2.22,7.39,7.39,0,0,1 -1.34,1.63,7,7,0,0,1-2.15,1.38l-2,.76c-.14,0-2.56,1-3.05,1.11L5, 25.54c-1,.35-2.17,1-2.17,2.3a2.88,2.88,0,0,0,1,1.91l10.79,10h -5a5.69,5.69,0,0,0-.43-1,4.42,4.42,0,0,0-.84-1.1c-.43-.43-.86-.87-1 -1L1.63,31A5.28,5.28,0,0,1,0,27.35C0,25.64.95,24,3.78,22.86Zm4.71, 5.72,1.95-.67,1.59-.58c.79-.3,1.54-.58,2.31-.91a.15.15,0,0,1,.2.19c -.09.21-.59,1.26-.72,1.52-.36.64-.67,1.23-1,1.78s-.78,1.21-1.06, 1.54a6.58,6.58,0,0,1-1.54,1.42,6.79,6.79,0,0,1-2,.88L16.48, 26.09a.44.44,0,0,0-.33.43.48.48,0,0,0,.32.44L5.31,29.86,4.4,29a1.49, 1.49,0,0,1-.48-1c0-.82.64-1.2,1.62-1.52Z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://powerequipment.honda.com">
+                <svg class="Honda_Power_Equipment_SVG" viewBox="0 0 124 33.7" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Power_Equipment_SVG {
+                                fill: #ffffff;
+                                fill-rule: evenodd;
+                                height: 60px;
+                                min-width: 80px;
+                            }
+
+                            @media only screen and (min-width: 1400px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Power_Equipment_SVG {
+                                    height: 65px;
+                                }
+                            }
+                        </style>
+                    </defs>
+                    <g>
+                        <path
+                            d="M24.3,2.3l1.5,0.2c0.6,0,0.7,0.6,0.7,0.9v1.7h-6.7V3.4c0-0.3,0.1-0.9,0.7-1L22,2.2V0.8h-8.7v1.5l1.5,0.2
+                        c0.7,0.1,0.7,0.6,0.7,1v5.7c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5H22v-1.7l-1.5-0.1c-0.7-0.1-0.7-0.6-0.7-1V7.4h6.7v1.7
+                        c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5H33v-1.6L31.5,10c-0.7-0.1-0.7-0.6-0.7-1V3.4c0-0.3,0.1-0.9,0.7-1L33,2.2V0.8h-8.7V2.3z">
+                        </path>
+                        <path
+                            d="M82.6,0.8H71.8v1.5l1.3,0.1c0.5,0.1,0.8,0.3,0.8,0.9v5.8c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5h10.9
+                        c3.9,0,7.1-1.6,7.1-5.5C89.8,2.4,86.5,0.8,82.6,0.8z M81.8,9.6h-3.7V2.9h3.7c2.2,0,2.9,1,2.9,3.4C84.7,8.6,84,9.6,81.8,9.6z">
+                        </path>
+                        <path d="M108.1,10.1c-0.7-0.1-0.9-0.5-1.1-0.9c-5-7.7-5-7.7-5-7.7c-0.4-0.6-0.6-0.7-1.2-0.7h-8.3v1.5l2,0.2
+                        c0.3,0,0.7,0.4,0.3,0.9l-3.7,6.1c-0.2,0.2-0.3,0.5-0.8,0.6l-1.5,0.2v1.5h7v-1.6l-1.2-0.1c-0.5-0.1-0.8-0.4-0.5-0.8l0.6-0.9h6.7
+                        l0.5,0.8c0.4,0.7-0.1,0.9-0.6,1l-1.2,0.1v1.5h9.5v-1.6L108.1,10.1z M95.9,6.4L98,3l2.2,3.4H95.9z">
+                        </path>
+                        <path
+                            d="M64,2.3l1.5,0.2c0.7,0.1,0.7,0.6,0.7,1V9l-5.8-7.6c-0.3-0.3-0.5-0.5-1.1-0.5c-0.4,0-7.5,0-7.5,0v1.5l1.5,0.2
+                        C54,2.7,54,3.2,54,3.6v5.7c0,0.3-0.1,0.9-0.7,1l-1.5,0.2V12h7v-1.8L57.3,10c-0.7-0.1-0.7-0.6-0.7-1V3.6l5.8,7.6
+                        c0.3,0.4,0.5,0.5,1.1,0.5h0.1c0.3,0,1.4,0,5.3,0V3.4c0-0.3,0.1-0.9,0.7-1l1.5-0.2V0.8h-7L64,2.3L64,2.3z">
+                        </path>
+                        <path
+                            d="M42.4,0.4c-7.1,0-8.9,3.1-8.9,5.9c0,2.7,1.8,5.8,8.9,5.8s8.9-3.1,8.9-5.8C51.4,3.5,49.5,0.4,42.4,0.4z
+                         M42.4,10c-2.8,0-3.9-1.2-3.9-3.8s1.1-3.8,3.9-3.8c2.8,0,3.9,1.2,3.9,3.8C46.3,8.9,45.2,10,42.4,10z">
+                        </path>
+                    </g>
+                    <g>
+                        <path d="M0.6,25.5h2.5c0.4,0,0.9,0,1.2,0.1s0.7,0.2,0.9,0.4c0.3,0.2,0.5,0.4,0.6,0.7c0.1,0.3,0.2,0.6,0.2,1
+                        c0,0.4-0.1,0.8-0.2,1.1c-0.2,0.3-0.4,0.5-0.7,0.7s-0.6,0.3-1,0.4c-0.4,0.1-0.8,0.1-1.2,0.1H2v3.2H0.6V25.5z M3,28.9
+                        c0.2,0,0.4,0,0.6,0c0.2,0,0.4-0.1,0.6-0.2c0.2-0.1,0.3-0.2,0.4-0.3s0.1-0.3,0.1-0.6c0-0.2,0-0.4-0.1-0.6c-0.1-0.1-0.2-0.3-0.4-0.3
+                        s-0.3-0.1-0.5-0.2c-0.2,0-0.4,0-0.6,0H2v2.2H3z"></path>
+                        <path d="M7.9,29.4c0-0.6,0.1-1.2,0.3-1.7s0.5-0.9,0.9-1.3c0.4-0.4,0.8-0.6,1.3-0.8c0.5-0.2,1.1-0.3,1.7-0.3
+                        c0.6,0,1.2,0.1,1.7,0.3c0.5,0.2,1,0.5,1.3,0.8c0.4,0.4,0.7,0.8,0.9,1.3s0.3,1.1,0.3,1.7c0,0.6-0.1,1.2-0.3,1.7
+                        c-0.2,0.5-0.5,0.9-0.9,1.3c-0.4,0.4-0.8,0.6-1.3,0.8s-1.1,0.3-1.7,0.3c-0.6,0-1.2-0.1-1.7-0.3s-0.9-0.5-1.3-0.8
+                        c-0.4-0.4-0.7-0.8-0.9-1.3C8.1,30.6,7.9,30,7.9,29.4z M9.5,29.4c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.7,0.5,0.9
+                        c0.2,0.3,0.5,0.5,0.8,0.6c0.3,0.1,0.7,0.2,1.1,0.2s0.8-0.1,1.1-0.2c0.3-0.1,0.6-0.3,0.9-0.6c0.2-0.3,0.4-0.6,0.5-0.9
+                        c0.1-0.3,0.2-0.7,0.2-1.1c0-0.4-0.1-0.8-0.2-1.1c-0.1-0.3-0.3-0.6-0.5-0.9c-0.2-0.3-0.5-0.5-0.8-0.6s-0.7-0.2-1.1-0.2
+                        s-0.8,0.1-1.1,0.2s-0.6,0.3-0.8,0.6c-0.2,0.3-0.4,0.6-0.5,0.9C9.5,28.6,9.5,29,9.5,29.4z"></path>
+                        <path d="M17.9,25.5h1.5l1.5,5.7h0l1.7-5.7h1.4l1.7,5.7h0l1.5-5.7h1.5l-2.3,7.8h-1.3l-1.8-5.8h0l-1.8,5.8h-1.3
+                        L17.9,25.5z"></path>
+                        <path d="M30.7,25.5h5.2v1.2h-3.8v2h3.6v1.2h-3.6v2.2h4v1.2h-5.4V25.5z"></path>
+                        <path d="M38.4,25.5h2.7c0.4,0,0.7,0,1.1,0.1c0.3,0.1,0.7,0.2,0.9,0.4s0.5,0.4,0.6,0.7c0.2,0.3,0.2,0.6,0.2,1
+                        c0,0.6-0.2,1-0.5,1.4c-0.3,0.4-0.8,0.6-1.3,0.7l2.1,3.5h-1.7L40.8,30h-1v3.3h-1.4V25.5z M40.9,28.9c0.2,0,0.4,0,0.6,0
+                        c0.2,0,0.4-0.1,0.5-0.2c0.2-0.1,0.3-0.2,0.4-0.3c0.1-0.2,0.2-0.3,0.2-0.6c0-0.2,0-0.4-0.1-0.5c-0.1-0.1-0.2-0.2-0.4-0.3
+                        c-0.1-0.1-0.3-0.1-0.5-0.2s-0.4,0-0.5,0h-1.3v2.2H40.9z"></path>
+                        <path d="M50,25.5h5.2v1.2h-3.8v2H55v1.2h-3.6v2.2h4v1.2H50V25.5z"></path>
+                        <path d="M66.1,33.3h-4.7c-0.6,0-1.2-0.1-1.7-0.3s-0.9-0.4-1.3-0.8c-0.4-0.3-0.6-0.8-0.8-1.3c-0.2-0.5-0.3-1.1-0.3-1.7
+                        c0-0.6,0.1-1.1,0.3-1.6c0.2-0.5,0.5-0.9,0.9-1.3s0.8-0.6,1.3-0.8s1.1-0.3,1.7-0.3c0.6,0,1.1,0.1,1.6,0.3c0.5,0.2,0.9,0.5,1.3,0.8
+                        s0.7,0.8,0.9,1.3c0.2,0.5,0.3,1,0.3,1.6c0,0.4,0,0.7-0.1,1c-0.1,0.3-0.2,0.6-0.3,0.8c-0.1,0.2-0.3,0.4-0.4,0.6s-0.3,0.3-0.5,0.5v0
+                        h1.9V33.3z M61.5,26.6c-0.4,0-0.7,0.1-1.1,0.2c-0.3,0.1-0.6,0.3-0.8,0.6c-0.2,0.2-0.4,0.5-0.6,0.9c-0.1,0.3-0.2,0.7-0.2,1.1
+                        c0,0.4,0.1,0.8,0.2,1.1c0.1,0.3,0.3,0.6,0.5,0.9c0.2,0.2,0.5,0.4,0.8,0.6s0.7,0.2,1.1,0.2c0.4,0,0.7-0.1,1.1-0.2
+                        c0.3-0.1,0.6-0.3,0.8-0.6c0.2-0.2,0.4-0.5,0.5-0.9s0.2-0.7,0.2-1.1c0-0.4-0.1-0.8-0.2-1.1c-0.1-0.3-0.3-0.6-0.5-0.9
+                        c-0.2-0.2-0.5-0.4-0.8-0.6C62.2,26.7,61.8,26.6,61.5,26.6z"></path>
+                        <path d="M74.3,30.5c0,0.5-0.1,0.9-0.2,1.3c-0.2,0.4-0.4,0.7-0.7,1s-0.6,0.5-1,0.6c-0.4,0.1-0.8,0.2-1.2,0.2
+                        s-0.9-0.1-1.2-0.2c-0.4-0.1-0.7-0.3-1-0.6s-0.5-0.6-0.7-1c-0.2-0.4-0.2-0.8-0.2-1.3v-4.9h1.4v4.9c0,0.2,0,0.5,0.1,0.7
+                        c0.1,0.2,0.2,0.4,0.3,0.6c0.1,0.2,0.3,0.3,0.5,0.4s0.5,0.2,0.8,0.2c0.3,0,0.6-0.1,0.8-0.2s0.4-0.3,0.5-0.4c0.1-0.2,0.2-0.4,0.3-0.6
+                        s0.1-0.4,0.1-0.7v-4.9h1.4V30.5z"></path>
+                        <path d="M76.9,25.5h1.4v7.8h-1.4V25.5z"></path>
+                        <path d="M81,25.5h2.5c0.4,0,0.9,0,1.2,0.1s0.7,0.2,0.9,0.4c0.3,0.2,0.5,0.4,0.6,0.7c0.1,0.3,0.2,0.6,0.2,1
+                        c0,0.4-0.1,0.8-0.2,1.1c-0.2,0.3-0.4,0.5-0.7,0.7c-0.3,0.2-0.6,0.3-1,0.4c-0.4,0.1-0.8,0.1-1.2,0.1h-1.1v3.2H81V25.5z M83.4,28.9
+                        c0.2,0,0.4,0,0.6,0c0.2,0,0.4-0.1,0.6-0.2c0.2-0.1,0.3-0.2,0.4-0.3c0.1-0.1,0.1-0.3,0.1-0.6c0-0.2,0-0.4-0.1-0.6
+                        c-0.1-0.1-0.2-0.3-0.4-0.3c-0.2-0.1-0.3-0.1-0.5-0.2c-0.2,0-0.4,0-0.6,0h-1v2.2H83.4z"></path>
+                        <path
+                            d="M88.7,25.5h2.2l2,5.5h0l2-5.5h2.2v7.8h-1.4v-6.3h0l-2.4,6.3h-1l-2.3-6.3h0v6.3h-1.3V25.5z">
+                        </path>
+                        <path d="M99.8,25.5h5.2v1.2h-3.8v2h3.6v1.2h-3.6v2.2h4v1.2h-5.4V25.5z"></path>
+                        <path d="M107.5,25.5h1.8l3.6,5.8h0v-5.8h1.4v7.8h-1.8l-3.7-6h0v6h-1.4V25.5z"></path>
+                        <path d="M118.7,26.8h-2.4v-1.2h6.2v1.2h-2.4v6.6h-1.4V26.8z"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://www.hondajet.com">
+                <svg class="Honda_Jet_SVG" viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Jet_SVG {
+                                fill: #fff;
+                                fill-rule: evenodd;
+                                height: 60px;
+                                min-width: 80px;
+                            }
+
+                            @media only screen and (min-width: 1400px) {
+                                .hrt .rzf-gry.rzf-gry-cta.rzf-gry-button[role=link] .rzf-gry-svg svg.Honda_Jet_SVG {
+                                    height: 65px;
+                                }
+                            }
+                        </style>
+                    </defs>
+
+                    <g>
+                        <path d="M2150.33,5030.19s8.31-13.5,10.31-14.16l0.01-.1a4.186,4.186,0,0,0
+                              -2.36.67c-1.6.92-4.09,4.37-5.91,7.12h-4.68c0.4-.66,3.37-5.33,3.37
+                              -5.33h-6.23l-0.26.41h3.61c0.23-.01.55,0.11,0.28,0.55,0,0-7,11.07
+                              -8.38,12.25a2.429,2.429,0,0,1-1.09.61v0.13a4.1,4.1,0,0,0,2.3
+                              -.67c2.21-1.33,4.59-4.96,6.17-7.57h4.66c-0.58.89-1.13,1.78-1.62,
+                              2.57a16.3,16.3,0,0,1-2.34,3.31,3.935,3.935,0,0,1-2.1.77l
+                              -0.22.43h5.96l0.22-.43-0.65-.03C2150.13,5030.65,2150.25,5030.36,
+                              2150.33,5030.19Zm68.64-9.99,0.03-.08c-1.92-.24-4.12,2.1-5.26,3.48h
+                              -1.75l-0.36.5h1.66c-0.52.73-1,1.38-1.45,1.97a33.2,33.2,0,0,1-2.61,
+                              2.47,7.664,7.664,0,0,1-4.28,2.04,1.489,1.489,0,0,1-1.62-1.63c0-.1.01
+                              -0.21,0.02-0.33a3.285,3.285,0,0,1,.18-0.7c0.05-.01.17-0.03,0.17
+                              -0.03,1.65-.34,6.04-1.25,6.28-3.24a0.97,0.97,0,0,0,.01-0.17,1,1,0,0,
+                              0-.25-0.7,2.068,2.068,0,0,0-1.58-.52c-2.64,0-6.65,2.79-6.98,
+                              5.54a2.183,2.183,0,0,0,2.34,2.62,9.04,9.04,0,0,0,5.61-2.29c0.48
+                              -.39.93-0.79,1.37-1.21a4.8,4.8,0,0,0-.86,1.94,1.7,1.7,0,0,0-.01.22,
+                              1.1,1.1,0,0,0,.27.76,1.822,1.822,0,0,0,1.32.45,6.012,6.012,0,0,0,
+                              3.14-1.36l-0.26-.21a6.225,6.225,0,0,1-2.26,1.07,0.4,0.4,0,0,1-.44
+                              -0.44,0.34,0.34,0,0,1,.01-0.1c0.08-.67.83-1.69,2.83-4.42,0,0,1.23
+                              -1.67,1.27-1.73h2.71l0.31-.5h-2.72a27.734,27.734,0,0,1,2.21-2.75A2,
+                              2,0,0,1,2218.97,5020.2Zm-11.17,3.45a0.474,0.474,0,0,1,.36.12,0.4,
+                              0.4,0,0,1,.08.26v0.09c-0.16,1.32-2.37,2.96-4.58,3.44C2204.27,5026.1,
+                              2206.51,5023.65,2207.8,5023.65Zm-3.88-3.1c0.52-.71,1.05-1.84,1.74
+                              -1.99l-0.03-.15h-6.59l-0.26.41h3.61c0.23-.01.55,0.12,0.28,0.56,0,0
+                              -3.86,5.88-4.04,6.19-0.01.02-.04,0.06-0.08,0.12-0.71.78-2.04,2.2
+                              -2.91,2.98-1.42,1.29-2.75,2.12-3.38,2.12a0.452,0.452,0,0,1-.33-0.11,
+                              0.482,0.482,0,0,1-.07-0.34c0.12-.99,1.74-3.02,3.05-4.66,0.64-.8,1.2
+                              -1.5,1.51-1.98l0.07-.11-2.36.14s-0.46.6-.57,0.76a1.6,1.6,0,0,0-1.71
+                              -1.23c-2.57,0-6.03,2.83-6.63,5.42-0.03.02-.43,0.39-0.43,0.39-1.49,
+                              1.36-2.57,1.84-3.1,1.84a0.3,0.3,0,0,1-.24-0.09,0.4,0.4,0,0,1-.07
+                              -0.34c0.13-1.15.65-1.84,2.81-4.76,0,0,4.62-6.13,5.57-6.28l0.01
+                              -.09a3.778,3.778,0,0,0-2.45.7,17.509,17.509,0,0,0-3.79,3.86c-0.27.36
+                              -.28,0.38-0.39,0.54a1.66,1.66,0,0,0-1.72-1.19c-2.05,0-4.67,1.68
+                              -5.96,3.81-0.58.59-1.14,1.14-1.65,1.62-2.06,1.95-2.84,2.1-3.02,
+                              2.1a0.44,0.44,0,0,1-.34-0.12,0.469,0.469,0,0,1-.08-0.37,6.154,6.154,
+                              0,0,1,1.64-2.51c0.89-1.04,1.82-2.11,1.94-3.12a1.223,1.223,0,0,0-.27
+                              -1.01,1.34,1.34,0,0,0-1.04-.4c-1.65,0-3.61,1.72-4.87,3.02l2.32-2.76
+                              -2.39.09s-2.78,2.3-3.86,3.04a16.3,16.3,0,0,1-1.58.96c0.27-.44,1.47
+                              -2.32.28-3.61a2.441,2.441,0,0,0-1.85-.74c-2.81,0-6.55,2.6-6.91,
+                              5.62a2.1,2.1,0,0,0,2.31,2.54,7.377,7.377,0,0,0,5.81-3.25,16.372,
+                              16.372,0,0,0,2.3-1.39c0.8-.56,1.94-1.44,2.8-2.17-0.83,1.16-4.84,6.64
+                              -4.84,6.64l0.13-.01,2.02-.06,0.02-.03c1.32-2.12,5.76-7.25,7.39
+                              -7.25a0.478,0.478,0,0,1,.37.13,0.422,0.422,0,0,1,.09.32,5.9,5.9,0,0,
+                              1-1.5,2.19c-0.91,1.03-1.93,2.19-2.06,3.24a1.357,1.357,0,0,0,.3,1.08,
+                              1.493,1.493,0,0,0,1.15.43c1.07,0,2.02-.53,3.74-2.12,0.37-.34.76
+                              -0.73,1.19-1.16-0.14.36-.7,1.89,0.1,2.8a1.591,1.591,0,0,0,1.25.48,
+                              4.907,4.907,0,0,0,3.35-1.52,1.523,1.523,0,0,0-.06.42,1.317,1.317,0,
+                              0,0,.22.74,1.421,1.421,0,0,0,1.2.49c1.36,0,2.62-.87,4.07-2.18,0,0.09
+                              -.01.19-0.01,0.28a1.683,1.683,0,0,0,1.68,1.9,5.177,5.177,0,0,0,3.34
+                              -1.62c-0.03.12-.05,0.25-0.07,0.35,0,0.06-.01.11-0.01,0.16a1.028,
+                              1.028,0,0,0,.26.7,1.387,1.387,0,0,0,1.08.41c1.16,0,2.51-.73,4.25
+                              -2.3,0.56-.5,1.22-1.17,1.99-1.99-1.91,2.98-5.98,9.21-7.04,
+                              10.13a2.577,2.577,0,0,1-1.1.6v0.12c1.26,0.12,2.55-.56,4.18
+                              -2.21C2196.28,5033.15,2202.88,5021.96,2203.92,5020.55Zm-42.64,4.13c
+                              -0.2,1.68-2.88,6.36-5.01,6.36a0.74,0.74,0,0,1-.57-0.21,1.032,1.032,
+                              0,0,1-.16-0.83c0.2-1.68,2.88-6.35,5.01-6.35a0.774,0.774,0,0,1,
+                              .57.2A1.042,1.042,0,0,1,2161.28,5024.68Zm16.37,5.77a0.783,0.783,0,0,
+                              1-.6-0.23,1.294,1.294,0,0,1-.21-0.99c0.25-2.07,2.91-5.58,4.61
+                              -5.58a0.9,0.9,0,0,1,.72.26,1.032,1.032,0,0,1,.19.83C2182.13,5026.58,
+                              2179.42,5030.45,2177.65,5030.45Zm10.43,0.13c-1.03.13-.82-1.28-0.8
+                              -1.43,0.2-1.64,2.79-5.5,4.72-5.5a0.869,0.869,0,0,1,.68.22,0.837,
+                              0.837,0,0,1,.17.58,1.8,1.8,0,0,1-.03.31C2192.65,5026.24,2189.85,
+                              5030.45,2188.08,5030.58Zm9.89-47.95c-3.02,1.75-6.46,6.69-9.9,11.89h
+                              -3.55c2.88-4.46,6.48-10.03,7.4-11.47,0.92-1.38,1.99-3.48,3.29-3.76l
+                              -0.05-.29h-12.47l-0.48.77s6.63,0.01,6.82,0c0.43,0,1.04.23,0.52,1.06l
+                              -8.87,13.69h-3.08c0.76-1.25,6.38-10.09,6.38-10.09h-11.79l
+                              -0.49.77s6.64,0.01,6.83,0c0.42-.01,1.04.23,0.52,1.06,0,0-13.12,20.85
+                              -15.84,23.17a4.6,4.6,0,0,1-2.07,1.14v0.25a7.582,7.582,0,0,0,4.35
+                              -1.27c4.19-2.52,8.68-9.38,11.67-14.31h3.05l-0.17.26c-3.61,5.63
+                              -11.31,17.41-13.32,19.15a4.647,4.647,0,0,1-2.07,1.14v0.24a7.638,
+                              7.638,0,0,0,4.35-1.26c4.19-2.52,8.68-9.39,11.67-14.31,0,0,1.48-2.29,
+                              3.38-5.22h3.54c-1.09,1.68-2.13,3.37-3.06,4.86-1.99,3.22-3.07,5.32
+                              -4.41,6.6a3.815,3.815,0,0,1-2.82,1.12l-0.43.8h11.04l0.42-.8-2.15
+                              -.06c-2.37-.13-2.13-0.68-1.98-1.01,0,0,5.1-8.69,10.01-15.74,6.36
+                              -9.13,7.59-9.35,8.22-9.46l0.01-.18A7.833,7.833,0,0,0,2197.97,4982.63Z"
+                            transform="translate(-2139 -4979)"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://engines.honda.com">
+                <svg class="Honda_Engines_SVG" viewBox="0 0 124 33.7" xmlns="http://www.w3.org/2000/svg">
+                    <defs> </defs>
+                    <g>
+                        <path
+                            d="M24.7,2.2l1.5,0.2c0.7,0.1,0.7,0.6,0.7,1v1.7h-6.7V3.3c0-0.3,0.1-0.9,0.7-1l1.5-0.2V0.7h-8.7v1.5l1.5,0.2 c0.5,0,0.6,0.6,0.6,0.9V9c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5h8.7v-1.6l-1.5-0.2c-0.7-0.1-0.7-0.6-0.7-1V7.3h6.7V9 c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5h8.7v-1.6l-1.5-0.2c-0.7-0.1-0.7-0.6-0.7-1V3.3c0-0.3,0.1-0.9,0.7-1l1.5-0.2V0.7h-8.7v1.5H24.7z">
+                        </path>
+                        <path
+                            d="M83.1,0.7H72.3v1.5l1.3,0.1c0.5,0.1,0.8,0.3,0.8,0.9V9c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5h10.9 c3.9,0,7.1-1.6,7.1-5.5C90.2,2.3,87,0.7,83.1,0.7z M82.3,9.5h-3.7V2.8h3.7c2.2,0,2.9,1,2.9,3.4C85.2,8.5,84.4,9.5,82.3,9.5z">
+                        </path>
+                        <path
+                            d="M108.6,10c-0.7-0.1-0.9-0.5-1.1-0.9c-5-7.7-5-7.7-5-7.7c-0.4-0.6-0.6-0.7-1.2-0.7H93v1.5l2,0.2 c0.3,0,0.7,0.4,0.3,0.9l-3.7,6.1c-0.2,0.2-0.3,0.5-0.8,0.6l-1.5,0.2v1.5h7v-1.6L95.1,10c-0.5-0.1-0.8-0.4-0.5-0.8l0.5-0.9h6.7 l0.5,0.8c0.4,0.7-0.1,0.9-0.6,1l-1.2,0.1v1.5h9.5v-1.6L108.6,10z M96.3,6.3l2.1-3.4l2.2,3.4H96.3z">
+                        </path>
+                        <path
+                            d="M64.5,2.2L66,2.4c0.7,0.1,0.7,0.6,0.7,1v5.5l-5.8-7.6c-0.3-0.3-0.5-0.5-1.1-0.5c-0.4,0-7.5,0-7.5,0v1.5 l1.5,0.2c0.7,0.1,0.7,0.6,0.7,1v5.7c0,0.3-0.1,0.9-0.7,1l-1.5,0.2v1.5h7v-1.8L57.8,10c-0.7-0.1-0.7-0.6-0.7-1V3.5l5.8,7.6 c0.3,0.4,0.5,0.5,1.1,0.5h0.1c0.3,0,1.4,0,5.3,0V3.3c0-0.3,0.1-0.9,0.7-1l1.5-0.2V0.7h-7L64.5,2.2L64.5,2.2z">
+                        </path>
+                        <path
+                            d="M42.9,0.3c-7.1,0-8.9,3.1-8.9,5.8s1.8,5.8,8.9,5.8s8.9-3.1,8.9-5.8S50,0.3,42.9,0.3z M42.9,9.9 c-2.8,0-3.9-1.2-3.9-3.8s1.1-3.8,3.9-3.8c2.8,0,3.9,1.2,3.9,3.8C46.8,8.8,45.6,9.9,42.9,9.9z">
+                        </path>
+                    </g>
+                    <g>
+                        <path d="M35.1,25.4h5.2v1.2h-3.8v2h3.6v1.2h-3.6V32h4v1.2h-5.4V25.4z"></path>
+                        <path d="M42.9,25.4h1.8l3.6,5.8h0v-5.8h1.4v7.8H48l-3.7-6h0v6h-1.4V25.4z"></path>
+                        <path
+                            d="M59.4,32.8c-0.4,0.2-0.8,0.3-1.3,0.4c-0.5,0.1-1,0.2-1.6,0.2c-0.6,0-1.2-0.1-1.7-0.3c-0.5-0.2-1-0.5-1.3-0.8 c-0.4-0.4-0.7-0.8-0.9-1.3s-0.3-1.1-0.3-1.7c0-0.6,0.1-1.2,0.3-1.7s0.5-0.9,0.9-1.3c0.4-0.4,0.8-0.6,1.3-0.8 c0.5-0.2,1.1-0.3,1.7-0.3c0.6,0,1.2,0.1,1.7,0.3s0.9,0.4,1.2,0.7l-1,1c-0.2-0.2-0.5-0.4-0.8-0.6c-0.4-0.2-0.7-0.2-1.2-0.2 c-0.4,0-0.8,0.1-1.1,0.2c-0.3,0.1-0.6,0.3-0.9,0.6c-0.2,0.3-0.4,0.6-0.5,0.9c-0.1,0.3-0.2,0.7-0.2,1.1c0,0.4,0.1,0.8,0.2,1.1 c0.1,0.3,0.3,0.7,0.5,0.9s0.5,0.5,0.9,0.6c0.3,0.1,0.7,0.2,1.2,0.2c0.6,0,1.1-0.1,1.6-0.3v-2h-1.6v-1.1h3V32.8z">
+                        </path>
+                        <path d="M62.2,25.4h1.4v7.8h-1.4V25.4z"></path>
+                        <path d="M66.4,25.4h1.8l3.6,5.8h0v-5.8h1.4v7.8h-1.8l-3.7-6h0v6h-1.4V25.4z"></path>
+                        <path d="M76.1,25.4h5.2v1.2h-3.8v2H81v1.2h-3.6V32h4v1.2h-5.4V25.4z"></path>
+                        <path
+                            d="M87.9,27c-0.1-0.2-0.4-0.4-0.6-0.5c-0.3-0.1-0.5-0.2-0.8-0.2c-0.2,0-0.3,0-0.5,0.1c-0.2,0-0.3,0.1-0.4,0.2 c-0.1,0.1-0.2,0.2-0.3,0.3s-0.1,0.3-0.1,0.5c0,0.2,0,0.3,0.1,0.5c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.2,0.5,0.2 c0.2,0.1,0.4,0.1,0.6,0.2c0.2,0.1,0.5,0.2,0.8,0.3c0.3,0.1,0.5,0.2,0.7,0.4c0.2,0.2,0.4,0.4,0.5,0.6c0.1,0.3,0.2,0.6,0.2,1 c0,0.4-0.1,0.8-0.2,1.1c-0.2,0.3-0.4,0.6-0.6,0.8c-0.3,0.2-0.6,0.4-0.9,0.5s-0.7,0.2-1.1,0.2c-0.5,0-1-0.1-1.5-0.3 s-0.9-0.5-1.2-0.8l1-0.9c0.2,0.3,0.4,0.5,0.8,0.6c0.3,0.2,0.6,0.2,0.9,0.2c0.2,0,0.3,0,0.5-0.1c0.2,0,0.3-0.1,0.5-0.2 c0.1-0.1,0.2-0.2,0.3-0.4s0.1-0.3,0.1-0.5c0-0.2,0-0.4-0.1-0.5s-0.2-0.3-0.4-0.4c-0.2-0.1-0.4-0.2-0.6-0.3 c-0.2-0.1-0.5-0.2-0.7-0.2c-0.2-0.1-0.5-0.2-0.7-0.3s-0.4-0.2-0.6-0.4c-0.2-0.2-0.3-0.4-0.5-0.6s-0.2-0.6-0.2-0.9 c0-0.4,0.1-0.7,0.2-1c0.2-0.3,0.4-0.5,0.6-0.7c0.3-0.2,0.6-0.3,0.9-0.4c0.3-0.1,0.7-0.1,1-0.1c0.4,0,0.8,0.1,1.2,0.2 c0.4,0.1,0.8,0.3,1.1,0.6L87.9,27z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://marine.honda.com">
+                <svg class="Honda_Marine_SVG" viewBox="0 0 120 55" xmlns="http://www.w3.org/2000/svg">
+                    <defs> </defs>
+                    <g>
+                        <path
+                            d="M13.5,1.9l1.5.2a.82.82,0,0,1,.7,1h0V4.9H8.9V3.1a.82.82,0,0,1,.7 -1h0l1.5-.2V.4H2.2V1.9l1.5.2a.82.82,0,0,1,.7,1h0V8.9a.82.82,0,0,1 -.7,1h0l-1.5.2v1.5h8.9V10.1L9.6,9.9a.82.82,0,0,1-.7 -1h0V7.1h6.8V8.9a.82.82,0,0,1-.7,1h0l-1.5.2v1.5h8.9V10.1l-1.5 -.2a.82.82,0,0,1-.7-1h0V3.1a.82.82,0,0,1,.7-1h0l1.5 -.2V.4H13.5ZM72.5.4H61.6V1.9l1.3.1a.86.86,0,0,1,.8.8V8.9a.82.82,0,0, 1-.7,1h0l-1.5.2v1.5H72.6c4,0,7.2-1.6,7.2-5.6S76.5.4,72.5.4Zm-.8, 9.1H68v-7h3.7c2.2,0,2.9,1.1,2.9,3.5S73.9,9.5,71.7,9.5Zm26.7.5a1.44, 1.44,0,0,1-1.1-.9L92.2,1.2A1.09,1.09,0,0,0,91,.5H82.6V2l2,.2a.75.75, 0,0,1,.5.7.35.35,0,0,1-.1.2L81.2,9.3a.87.87,0,0,1-.8.6l -1.5.2v1.5H86V10.1L84.8,10c-.5-.1-.8-.4-.5-.9l.6-.9h6.8l.5.8c.4.7 -.1,1-.6,1l-1.2.1v1.5H100V10.1ZM86,6.2l2.1-3.5,2.2,3.5ZM53.7, 1.9l1.5.2a.82.82,0,0,1,.7,1h0V8.7L50,.9A1.17,1.17,0,0,0, 48.9.4H41.3V1.9l1.5.2a.78.78,0,0,1,.7.9V8.9a.82.82,0,0,1-.7,1h0l -1.5.2v1.5h7.1V10.1l-1.5-.2a.82.82,0,0,1-.7-1h0V3.3l5.9,7.9a1,1,0,0, 0,1.1.5h5.4V3.2a.82.82,0,0,1,.7-1h.1L60.9,2V.5H53.8l-.1,1.4ZM31.8,0c -7.2,0-9.1,3.2-9.1,6s1.9,6,9.1,6,9.1-3.2,9.1-6S39,0,31.8,0Zm0, 9.9C29,9.9,27.9,8.7,27.9,6s1.2-3.9,3.9-3.9S35.7,3.3,35.7,6,34.6,9.9, 31.8,9.9ZM51,16.1l51-.9v-.5l-51-.9-51,1v.5ZM39.2,23.7c0-3.6-1.8-5.3 -5.4-5.3H28.2c-3.6,0-5.4,1.7-5.4,5.3V29h4.3V23.3c0-1.9.9-2.8,2.8 -2.8H32c1.9,0,2.8.9,2.8,2.8v.4H28.1v2.1h6.7V29h4.3l.1-5.3Zm42.1,0c0 -3.6-1.8-5.3-5.4-5.3H65.8V29h4.3V20.5h4.1c1.9,0,2.8.9,2.8, 2.8V29h4.3V23.7ZM7.7,20.5V29H3.4V18.4H15.3c3.6,0,5.4,1.7,5.4, 5.3V29H16.4V23.3c0-1.9-.9-2.8-2.8-2.8Zm2.6.4V29h3.5V22Zm44.1, 4.7a3.62,3.62,0,0,0,2.9-3.5c0-2-1.7-3.7-4.4 -3.7H41.3V29h4.3V20.5h5.1c1.5,0,2.2.7,2.2,1.6s-.7,1.6-2.2, 1.6H46.9L51.6,29h5.8l-3-3.4m33.3,1.3H98.6V29H83.4V23.7c0-3.6,1.8 -5.3,5.4-5.3h9.8v2.1H90.5c-1.9,0-2.8.9-2.8,2.8Zm1.1 -4.3v2.1h8.8V22.6ZM59.2,18.4v3.8l4.6-3.8Zm0,5.2V29h4.3V20Z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+            <a href="http://hpd.honda.com">
+                <svg class="Honda_Racing_SVG" viewBox="0 0 875 125" xmlns="http://www.w3.org/2000/svg">
+                    <defs> </defs>
+                    <g>
+                        <path d="M684.8,63l15.8-52.2h-21.4c-3.5-0.1-6.7,2.1-7.8,5.5L657.3, 63H684.8z"></path>
+                        <path
+                            d="M350.8,29.1c-6.9,0-14.4,2.9-16.6,9.9l-4.2,14c-2,6.7,5.5,9.9,11.2, 9.9h60l12.6-42.2c1.7-5.7-3.7-10-9-10l0,0h-47.1c-6.8,0-10,9.9-0.5, 9.9h29.1l-2.6,8.4H350.8z M376.6,53.1h-18.9l4.1-14h0h18.9L376.6,53.1z">
+                        </path>
+                        <path
+                            d="M532.8,29.1c-6.9,0-14.4,2.9-16.6,9.9l-4.2,14c-2,6.7,5.5,9.9,11.2, 9.9h60l12.6-42.2c1.7-5.7-3.7-10-9-10h-47.1c-6.8,0-10,9.9-0.5,9.9h29.1l -2.6,8.4H532.8z M558.6,53.1h-18.9h0l4.1-14h0h18.9h0L558.6,53.1z">
+                        </path>
+                        <path
+                            d="M603.6,63h41.8c8.1,0,10.2-9.9,1.5-9.9h-26.8l9.7-32.4h26.6c7.7,0, 10.9-9.9,1.1-9.9h-38.7c-6.9,0-14.5,3-16.7,10.1l-9.8,32.3C590.4,60,597.9, 63,603.6,63z">
+                        </path>
+                        <path
+                            d="M474.4,10h18.9l-5.2,17.8l-12.7,0l0,0l-2.2,9.8l4.6,25.4h30.4l-6.1 -25.5c6-0.7,11.8-3.7,13.7-9.8L521,10c2-6.7-5.4-9.8-11.2-9.8h-59.9l-19, 62.8h27.9L474.4,10z">
+                        </path>
+                        <path
+                            d="M671.2,86.3c3.2,0.5,9.4-0.1,12.9-0.1v0c2.2-2.5,5-4.8,7.5-7.1c0.5 -0.5,1.9-2.2,3.4-4h-20.6c-2.2,3-4.9,6.6-6.7,9.2C668.7,85.2,669.9,85.8, 671.2,86.3z">
+                        </path>
+                        <path
+                            d="M651.1,96c1.7,1.7,5.9,3.8,9.7,5.1l0,0c1.4-4.9,3.2-9.7,5.2-14.3c0.3 -0.8,0.7-1.6,1.2-2.3c-2-1.3-4-3.1-5.3-4c-1.9-1.5-3.5-3.3-4.8-5.3h -12.8c3.2,2.4,6.9,5.7,7.5,7c2.2,4.1-0.6,8.4-3.4,11.6C649.3,94.6,650.2, 95.4,651.1,96z">
+                        </path>
+                        <path
+                            d="M45.1,37.6h11.4l-7.6,25.3h27.5L95.3,0H74c-3.5-0.1-6.7,2.1-7.8,5.5l -6.3,20.9H48.2C40.6,26.3,38.1,37.6,45.1,37.6z">
+                        </path>
+                        <path
+                            d="M706.9,101.5c-3.5-0.3-4-0.3-7.4-0.5v0c-1,1.4-3.4,3.4-5.6,6.3c-2.3, 2.6-5.2,5.7-7.5,8.7h24.2c5.1-3.9,9.6-7.3,10.9-8.4c2.4-1.7,5.3-3.5,7.7 -5.3C721.8,102.5,714.3,102.2,706.9,101.5z">
+                        </path>
+                        <path
+                            d="M698.8,100.7c1.4-1.9,2.4-4.2,3.9-6.2c2-2.9,2.8-5.9,4.9-8.6c-11.5 -1.1-27.7,4.3-37.3,16.7h-4.5c-1.5,0-2.6-0.4-4.9-1.2c-1.9,6.2-7.2,10.7 -12.6,14.7h15.1c0.4-1.3,1-2.4,1.8-3.5c5.3-6.8,13.2-11.9,22-11.9C689.9, 100.6,696.2,100.5,698.8,100.7z">
+                        </path>
+                        <polygon points="708,85.3 708,85.3 708,85.3 "></polygon>
+                        <path
+                            d="M714.3,77.8c-2.2,2.4-4.3,4.9-6.3,7.5c4.6,0.4,10,0.9,14.3,2.2c6.5, 1.9,15.3,2.7,22.2,3.1c3.8-4.2,7.8-8,11.7-12.1c1.6-1.3,3.3-2.4,5.2-3.4h -44.9C715.5,76.3,714.6,77.4,714.3,77.8z">
+                        </path>
+                        <path
+                            d="M804.8,10.8c-5.8,0-15.2,3.2-17.1,9.9l-9.9,30.9c-2.2,7,1.6,11.5, 11.3,11.5h31.7l-1.9,6.2c-1.2,4-5.3,5.9-9.2,5.9h-23c-9.4,0-10.8,11-1.7, 11h43.6c6.7,0,14-4.4,16-11.1L864,10.8H804.8z M823.7,53h-18.8l10.6 -32.2h18.9L823.7,53z">
+                        </path>
+                        <polygon points="660.9,101.3 660.9,101.3 660.9,101.3 "></polygon>
+                        <path
+                            d="M260.2,63H320l19-63h-21.4l0,0c-3.5-0.1-6.7,2.1-7.8,5.5l-1.6,5.3h -32.9c-6.9,0-14.4,3-16.6,10.1L249,53.1C247,59.8,254.4,63,260.2, 63z M286.5,20.7h18.8h0l-9.7,32.4h-18.9L286.5,20.7z">
+                        </path>
+                        <path
+                            d="M769.4,10.8h-47.5c-6.9,0-13.3,2.9-15.5,9.9L693.4,63h26.7l12.8 -42.3h19L739.3,63h26.8l12.7-42.3C780.6,14.5,774.9,10.8,769.4,10.8z">
+                        </path>
+                        <path
+                            d="M640.5,104c9.3-8.9,2.8-10.1-1.4-12.7c-4.2-2.6-14.1-1.6-18.7,0.3c1.4 -0.9,3-2.8,4.6-4c1.3-1,6.6-7.6,9.3-12.4H0V116h603c0.5-1.5,1-2.9,1.5 -4.2c0.8-2.4,2-4.7,3.4-6.8c-3.4-2.1-10.5-2.7-15.6-4.5c-2.8-1-2.6-1.2-4.7 -1.9c1-1.6,2.1-2.6,2.9-3.7c1.8-2.9,6.2-7.1,8.7-10.8c1.5,0.2,2.9,0.6,4.3, 1c3.4,1.4,5.8,1.4,9.3,3.2c1.4,0.9,6,2.3,6.8,3.8c-2.9,1.9-5.5,4.3-7.5, 7.2c-1.3,1.8-2.4,3.8-3.2,6c6.6-0.2,12.8,0.4,16.3,2.6c2.6,2,3.8,4.1,3.4, 8.2H647l0,0c-2.8-2.7-5.4-5.8-7.5-9.1C639.3,106.7,640.8,104.1,640.5, 104z M391.4,110.6L391.4,110.6L391.4,110.6h-11.8V80.7h11.8V110.6z M436.3, 110.6L436.3,110.6L436.3,110.6h-11.8v-14h-30.4l2.4 -4.5h27.9V80.7h11.8V110.6z M485.1,101.1L485.1,101.1l-30.3,0l2.4 -4.5H479c4.8,0,8.3-2.7,8.3-6c0-3.2-3.5-5.7-8.3-5.7h-27.4v25.7h -11.8V80.7h45.9c7.6,0,14.2,4.6,13.9,10.2C499.2,96.6,492.7,101.1,485.1, 101.1z M537.5,110.6L537.5,110.6l-20.8,0l2.6-5.1h14c7.6,0,13.7-4.6,13.7 -10.3s-6.1-10.4-13.7-10.4h-19.7v25.8h-11.8V80.7h36c12.2,0,22.2,6.5,22.2, 14.5S549.8,110.6,537.5,110.6z">
+                        </path>
+                        <path
+                            d="M193.9,63l12.8-42.3h19L213,63h26.7l12.7-42.3c1.9-6.2-3.8-9.9-9.4 -9.9h-47.5c-6.9,0-13.3,2.9-15.5,9.9L167.2,63H193.9z">
+                        </path>
+                        <path d="M46.5,0H25.1c-3.5-0.1-6.7,2.1-7.8,5.5L0,62.9h27.5L46.5,0z"></path>
+                        <path
+                            d="M99.7,63h46.1c7,0,14.6-2.8,16.8-9.9l9.9-32.2c1.9-6.2-4.5-10.1-10 -10.1h-47.6c-6.9,0-14.4,3-16.5,10.1l-9.8,32.2C86.5,59.8,94,63,99.7, 63z M126,20.7L126,20.7h18.9h0l-9.7,32.4h-19L126,20.7z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- smooth scrolling -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.scollLink').click(function () {
+            $('.scrollLink').click(function () {
                 let target = $(this).attr("href");
                 console.log(target);
                 $('.vehicles-content').stop().animate({
@@ -965,6 +1902,33 @@
                 }, 1000);
                 event.preventDefault();
             });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.back-to-top').click(function () {
+                let target = $(this).attr("href");
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                event.preventDefault();
+            });
+        })
+    </script>
+    <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#first-carousel').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 1000
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#carousel-content').slick();
         });
     </script>
     <script type="text/javascript">
@@ -991,6 +1955,42 @@
                 else {
                     $('.navbar-shopping').find('.fa-angle-up').hide();
                     $('.navbar-shopping').find('.fa-angle-down').show();
+                    status = !status;
+                }
+            })
+            $('.owners-nav').click(function () {
+                if (status) {
+                    $('.owners-nav').find('.fa-angle-down').hide();
+                    $('.owners-nav').find('.fa-angle-up').show();
+                    status = !status;
+                }
+                else {
+                    $('.owners-nav').find('.fa-angle-up').hide();
+                    $('.owners-nav').find('.fa-angle-down').show();
+                    status = !status;
+                }
+            })
+            $('.discover-nav').click(function () {
+                if (status) {
+                    $('.discover-nav').find('.fa-angle-down').hide();
+                    $('.discover-nav').find('.fa-angle-up').show();
+                    status = !status;
+                }
+                else {
+                    $('.discover-nav').find('.fa-angle-up').hide();
+                    $('.discover-nav').find('.fa-angle-down').show();
+                    status = !status;
+                }
+            })
+            $('.english-nav').click(function () {
+                if (status) {
+                    $('.english-nav').find('.fa-angle-down').hide();
+                    $('.english-nav').find('.fa-angle-up').show();
+                    status = !status;
+                }
+                else {
+                    $('.english-nav').find('.fa-angle-up').hide();
+                    $('.english-nav').find('.fa-angle-down').show();
                     status = !status;
                 }
             })
